@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Lato:wght@100;300;400;700&display=swap');
+
+:root {
+    --gray: #1F1F1F;
+    --purple: #AF00FF;
+    --blue: #3A7FFF;
+    --lightblue: #E2ECFF;
+    --yellow: #FFBE0C;
+    --orange: #FF5608;
+    --green: #96BE1E;
+  }
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+header{
+    background-color: white;
+    height: 99px;
+    padding: 0;
+}
+.karzhynlogo{
+    height: 64px;
+    align-items: center;
+}
+.nav-links{
+    font-family: Jost, sans-serif;
+    color: black;
+    font-weight: 700;
+}
+.nav1,.nav2,.nav3,.nav4,.nav5{
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+.nav1:hover{
+    background-color: var(--purple);
+}
+.nav2:hover{
+    background-color: var(--blue);
+}
+.nav3:hover{
+    background-color: var(--yellow);
+}
+.nav4:hover{
+    background-color: var(--orange);
+}
+.nav5:hover{
+    background-color: var(--green);
+}
+.nav1:hover a,.nav2:hover a, .nav4:hover a{
+    color: white;
+}
+.nav3:hover a,.nav5:hover a{
+    color: black;
+}
+.empty-space{
+    height: 80px;
+}
+.hero-container{
+    padding: 0;
+}
+.decal1{
+    position: absolute;
+    transform: rotate(90deg);
+    z-index: -10;
+    right: 5px;
+    top: 230px;
+}
+.hero-bg{
+    background-color: var(--yellow);
+}
+.hero-h1 {
+    font-family: Jost, sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+}
+.rounded-1{
+    border-radius: 25px;
+}
+.rounded-2{
+    border-radius: 15px;
+}
+.hero-p {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+}
+.herosub-gap{
+    margin-right: 20px;
+}
+.herosub-h2{
+    font-family: Jost, sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+}
+.herosub-p{
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+.trusted{
+    background-color: var(--orange);
+    height: 400px;
+}
+.trusted-p{
+    color: white;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+}
+.logo-container{
+    height: 64px;
+}
+.bluebg{
+    background-color: var(--blue);
+    height: 800px;
+    z-index: -20;
+}
+.getintouch{
+
+}
+.getintouch-form{
+    background-color: white;
+    border-radius: 25px;
+    max-width: 830px;
+}
+
+.getintouch h2{
+    font-family: Jost, sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+}
+.getintouch p, label{
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+}
+textarea, input{
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #8EACE5;
+    background-color: var(--lightblue);
+}
+.decal2{
+    position: absolute;
+    z-index: -10;
+    left: -50px;
+    top: 1800px;
+}
+.decal3{
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: -10;
+    right: -120px;
+    top: 1800px;
+}
