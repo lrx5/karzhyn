@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Lato:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Lato:wght@100;300;400;700;900&display=swap');
 
 :root {
     --gray: #1F1F1F;
@@ -8,8 +8,7 @@
     --yellow: #FFBE0C;
     --orange: #FF5608;
     --green: #96BE1E;
-  }
-
+}
 html, body{
     margin: 0;
     padding: 0;
@@ -64,8 +63,8 @@ header{
     position: absolute;
     transform: rotate(90deg);
     z-index: -10;
-    right: 5px;
-    top: 230px;
+    right: -150px;
+    top: 50px;
 }
 .hero-bg{
     background-color: var(--yellow);
@@ -86,6 +85,9 @@ header{
     font-weight: 400;
     font-size: 28px;
 }
+.mw1200{
+    max-width: 1200px;
+}
 .herosub-gap{
     margin-right: 20px;
 }
@@ -101,31 +103,35 @@ header{
 }
 .trusted{
     background-color: var(--orange);
-    height: 400px;
+    min-height: 400px;
 }
 .trusted-p{
     color: white;
     font-family: Lato, sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 28px;
 }
 .logo-container{
     height: 64px;
 }
-.bluebg{
-    background-color: var(--blue);
+.gitbg{
+    position: relative;
+    background-image: url("img/getintouch_bg.PNG");
+    z-index: -100;
     height: 800px;
-    z-index: -20;
-}
-.getintouch{
-
 }
 .getintouch-form{
     background-color: white;
     border-radius: 25px;
     max-width: 830px;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.73);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(12.5px);
+-webkit-backdrop-filter: blur(12.5px);
+border: 1px solid rgba(255, 255, 255, 0.25);
 }
-
 .getintouch h2{
     font-family: Jost, sans-serif;
     font-weight: 600;
@@ -143,16 +149,41 @@ textarea, input{
     border-color: #8EACE5;
     background-color: var(--lightblue);
 }
+.form-container{
+    position: relative;
+}
 .decal2{
     position: absolute;
-    z-index: -10;
-    left: -50px;
-    top: 1800px;
+    z-index: -1;
+    left: 5px;
+    top: 60px;
 }
 .decal3{
     transform: rotate(90deg);
     position: absolute;
-    z-index: -10;
-    right: -120px;
-    top: 1800px;
+    z-index: -1;
+    right: -30px;
+    top: 480px;
+}
+.footer{
+    position: relative;
+    z-index: -100;
+    background-color: var(--white);
+    height: 300px;
+}
+.footer-offset{
+    margin-left: 80px;
+}
+.footer-a p{
+    color: black;
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+}
+.footer-a a{
+    color: black;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
