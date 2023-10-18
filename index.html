@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Karzhyn Media Group</title>
     <script src="script.js"></script>
@@ -71,34 +72,77 @@
         </div>
     </div>
     <!--OurClients-->
-    <div class="col trusted d-flex flex-column justify-content-around align-items-center p-0">
+    <div class="col trusted d-flex flex-column justify-content-around align-items-center p-0 logos">
         <div></div>
-        <div class="row w-100 justify-content-center align-items-center mw1200">
-            <p class="trusted-p m-0">Our Clients</p>
+        <div class="mw1200">
+            <p class="row trusted-p m-0 justify-content-center">Our Clients</p>
         </div>
-        <div class="row m-0 d-flex justify-content-center mw1200">
-            <div class="row mb-4 logo-container align-items-center ">
+        <div class="row m-0 d-flex justify-content-center align-content-centerm mw1200">
+            <div class="row mb-4 logo-container align-items-center justify-content-around">
                 <img class="h-100 pr-5" src="img/353.png" alt="threefivethree-logo">
                 <img class="h-75 pr-5" src="img/adp.png" alt="adp-logo">
+                <img class="h-100 pr-5" src="img/SafeBox.png" alt="SafeBox-logo">
                 <img class="h-100 pr-5" src="img/brunch.png" alt="brunch-logo">
                 <img class="h-100 pr-5" src="img/Handiplate.png" alt="Handiplate-logo">
             </div>
-            <div class="row logo-container align-items-center">
+            <div class="row logo-container align-items-center justify-content-around">
                 <img class="h-100 pr-5" src="img/Lee & Meng.png" alt="Lee&Meng-logo">
                 <img class="h-100 pr-5" src="img/pyra.png" alt="Pyra-logo">
                 <img class="h-75 pr-5" src="img/valence.png" alt="Valence-logo">
-                <img class="h-100 pr-5" src="img/SafeBox.png" alt="SafeBox-logo">
                 <img class="h-100" src="img/seQ.png" alt="seQ-logo">
             </div>
         </div>
         <div></div>
     </div>
     <!--Spacing-->
-    <div class="empty-space w-100"></div>
-    <!--DoSomethingHere-->
-    <div class="text-center"><p>Do something here</p></div>
+    <div class="row empty-space w-100"></div>
+    <!--Testimonials-->
+    <h2 class="text-center">What our clients says about us</h2>
+    <div class="testimonials-container d-flex justify-content-center">
+        <div class="testimonials row">
+            <div class="gradient-left"></div>
+            <div class="gradient-right"></div>
+            <div class="carousel" data-flickity='{ "autoPlay": 1500,"prevNextButtons": false, "adaptiveHeight": true }'>
+                <div class="carousel-cell">
+                    <div><p class="mb-0">"Working with Karzhyn Media was an absolute pleasure. They transformed our brand's identity with a stunning logo and an impressive animation that brought our products to life. <i>Their creativity and attention to detail truly exceeded our expectations."</i></p></div>
+                    <div class="d-flex flex-row align-items-center">
+                        <img class="profile-img m-0 p-0"src="img/profile_harukitanaka.png" alt="profile_harukitanaka">
+                        <p class="d-inline-block m-0 p-4 gray-text">Haruki Tanaka<br>— CEO PaiRa</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div><p class="mb-0">"Jeron's company has been an invaluable partner for our business. <i>Their branding expertise helped us stand out in a competitive market.</i> The packaging design they created was not only eye-catching but also functional. We couldn't be happier with the results!"</p></div>
+                    <div class="d-flex flex-row align-items-center">
+                        <img class="profile-img m-0 p-0"src="img/profile_charlottewhite.png" alt="profile_charlottewhite">
+                        <p class="d-inline-block mb-0 p-4 gray-text">Charlotte White<br>— Head of Marketing of 353</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div><p class="mb-0">"I approached Karzhyn Media with a vision for an animated video to showcase our latest product. <i>They took our concept and turned it into a captivating animation that has become a powerful marketing tool.</i> Their talent and dedication are truly impressive."</p></div>
+                    <div class="d-flex flex-row align-items-center">
+                        <img class="profile-img m-0 p-0"src="img/profile_liamsmith.png" alt="profile_liamsmith">
+                        <p class="d-inline-block m-0 p-4 gray-text">Liam Smith<br>— CEO brunch</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div><p class="mb-0">"The team at K.M. is <i>incredibly talented and professional.</i> They designed our company's logo, which perfectly captured our identity. Their attention to detail in every project, <i>from branding to packaging design, is outstanding."</i></p></div>
+                    <div class="d-flex flex-row align-items-center">
+                        <img class="profile-img m-0 p-0"src="img/profile_johnnymeng.png" alt="profile_johnnymeng">
+                        <p class="d-inline-block m-0 p-4 gray-text">Johnny Meng<br>— Co-Founder of Codesigners</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div><p class="mb-0">"Jeron helped our startup establish a strong brand presence. <i>Their design work, including our logo and branding materials, set the tone for our company's success.</i> Their animation work was the icing on the cake, engaging our audience like never before."</p></div>
+                    <div class="d-flex flex-row align-items-center">
+                        <img class="profile-img m-0 p-0"src="img/profile_sophiawilson.png" alt="profile_sophiawilson">
+                        <p class="d-inline-block m-0 p-4 gray-text">Sophia Wilson<br>— Chief Marketing Officer at Valence</p>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
     <!--Spacing-->
-    <div class="empty-space w-100"></div>
+    <div class="row empty-space w-100"></div>
     <!--GetInTouch-->
     <div class="gitbg d-flex justify-content-center align-items-center">
         <div class="mw1200 d-flex justify-content-center align-items-center form-container h-100 w-100">
@@ -156,5 +200,6 @@
             </div>
         </div>
     </div>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>

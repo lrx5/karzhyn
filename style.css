@@ -9,6 +9,9 @@
     --orange: #FF5608;
     --green: #96BE1E;
 }
+*{
+    box-sizing: border-box;
+}
 html, body{
     margin: 0;
     padding: 0;
@@ -63,11 +66,15 @@ header{
     position: absolute;
     transform: rotate(90deg);
     z-index: -10;
-    right: -150px;
-    top: 50px;
+    right: -160px;
+    top: 40px;
+    animation: decal1anim 3s ease-in-out infinite;
 }
 .hero-bg{
     background-color: var(--yellow);
+}
+.hero-bg > div{
+    position: relative;
 }
 .hero-h1 {
     font-family: Jost, sans-serif;
@@ -88,6 +95,9 @@ header{
 .mw1200{
     max-width: 1200px;
 }
+.mw600{
+    max-width: 600px;
+}
 .herosub-gap{
     margin-right: 20px;
 }
@@ -107,13 +117,99 @@ header{
 }
 .trusted-p{
     color: white;
-    font-family: Lato, sans-serif;
-    font-weight: 700;
-    font-size: 28px;
+    font-family: Jost, sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+}
+.logos img{
+    width: auto; /* Set your desired width */
+    height: auto; /* Allow the height to adjust proportionally */
 }
 .logo-container{
     height: 64px;
 }
+.c-container{
+    max-height: 400px;
+}
+/*Testimonials*/
+.testimonials-container{
+    height:480px;
+}
+.testimonials{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 100%;
+}
+.carousel{
+  background: transparent;
+  height: 350px;
+  width: 100%;
+}
+.carousel-cell {
+  position: relative;
+  width: 50%;
+  height: 300px;
+  margin: 20px 10px 20px 0;
+  padding: 36px;
+  border:1px solid #e3e8e9;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.carousel-cell p{
+    font-family: Lato;
+    font-size: 18px;
+}
+.carousel-cell i{
+    color: #af00ff;
+    background-color: #f7e6ff;
+}
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+.profile-img{
+  display: flex;
+  width: 64px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.10);
+  border-radius: 65536px;
+  margin-left: 40px;
+  /*filter: grayscale(100%);*/
+}
+/*Gradients*/
+.gradient-left{
+    position: absolute;
+    z-index: 2;
+    left:0;
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+    height: 100%;
+    width: 8%;
+    content: '';
+}
+.gradient-right{
+    position: absolute;
+    z-index: 2;
+    right:0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
+    height: 100%;
+    width:8%;
+    content: '';
+}
+.gray-text {
+    color: #6e7f87;
+}
+/*Get In Touch*/
 .gitbg{
     position: relative;
     background-image: url("img/getintouch_bg.PNG");
@@ -186,4 +282,24 @@ textarea, input{
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 10px;
+    text-decoration: none;
+}
+.footer-a a:hover{
+    color: black;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+@keyframes decal1anim {
+    0% {
+        right: -160px;
+    }
+    50% {
+        right: -220px; /* Adjust the distance to move left */
+    }
+    100% {
+        right: -160px;
+    }
 }
