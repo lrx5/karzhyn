@@ -10,18 +10,19 @@
     <title>Karzhyn Media Group</title>
     <script src="script.js"></script>
 </head>
-<body>
+<body class="d-flex flex-column">
     <!--Header-->
     <header class="w-100 d-flex flex-row justify-content-center align-items-center">
         <div class="w-75 h-100 d-flex flex-row justify-content-center align-items-center">
-            <a href="#Home" class="w-100">
-                <img class="karzhynlogo"src="img/karzhynlogo.png" alt="karzhynlogo"></a>
+            <a href="main.html" class="w-100">
+            <img class="karzhynlogo"src="img/karzhynlogo.png" alt="karzhynlogo">
+            </a>
             <div class="d-flex flex-row justify-content-center align-content-center">
-                <div class="p-4 nav1"><a href="#Services" class="nav-links text-decoration-none ">SERVICES</a></div>
-                <div class="p-4 nav2"><a href="#About" class="nav-links text-decoration-none ">ABOUT</a></div>
-                <div class="p-4 nav3 "><a href="#Projects" class="nav-links text-decoration-none">PROJECTS</a></div>
-                <div class="p-4 nav4 "><a href="#Career" class="nav-links text-decoration-none">CAREER</a></div>
-                <div class="p-4 nav5 "><a href="#Contact" class="nav-links text-decoration-none">CONTACT</a></div>
+                <div class="p-4 nav1"><a href="index.html" class="nav-links text-decoration-none ">ABOUT</a></div>
+                <div  class="p-4 nav2"><a href="services.html" class="nav-links text-decoration-none ">SERVICES</a></div>
+                <div class="p-4 nav3 "><a href="projects.html" class="nav-links text-decoration-none">PROJECTS</a></div>
+                <div class="p-4 nav4 "><a href="career.html" class="nav-links text-decoration-none">CAREER</a></div>
+                <div class="p-4 nav5 "><a href="contact.html" class="nav-links text-decoration-none">CONTACT</a></div>
             </div>
         </div>
     </header>
@@ -30,15 +31,15 @@
         <div class="d-flex flex-column align-items-center mw1200">
             <div class="row empty-space w-100"></div>
             <div class="row d-flex flex-row justify-content-center">
-                <div class="col w-50 p-0 mr-5 d-flex flex-column justify-content-center align-content-between">
+                <div class="col-6 py-5 ps-0 pe-5 d-flex flex-column justify-content-center align-content-between">
                     <h1 class="hero-h1">Crafting Brands with Creative Strategy</h1>
                     <p class="hero-p">We help businesses create a strong and memorable brand presence that stands out in the competitive marketplace.</p>
                 </div>
-                <div class="col w-50 h-100 p-0">
+                <div class="col-6 py-5 ps-5 pe-0">
                     <!--Yellowbg-->
-                    <div class="w-100 h-100 p-3 mb-2 hero-bg rounded-1">
+                    <div class="w-100 h-100 p-3 mb-2 hero-bg rounded-4">
                         <div class="w-90 h-90">
-                            <img class="decal1" src="img/decal_purple.png" alt="decal_purple">
+                            <img class="decal1" src="img/decal_purple_mini.png" alt="decal_purple_mini">
                             <img class="w-100 h-100 rounded-2 hero-img"src="img/heroimg2.png" alt="heroimg2">
                         </div>
                     </div>
@@ -48,33 +49,32 @@
             <div class="row empty-space w-100"></div>
             <!--HeroSub-->
             <div class="row d-flex flex-row justify-content-center">
-                <div class="row herosub d-flex justify-content-center">
-                    <div class="col herosub-gap">
+                <div class="row p-0 herosub d-flex justify-content-center gap-5">
+                    <div class="col p-0">
                         <h2 class="herosub-h2">Logo Design</h2>
                         <p class="herosub-p">From concept to final design, we are committed to delivering a logo that resonates with your vision that sets you apart in the competition.</p>
                     </div>
-                    <div class="col herosub-gap">
+                    <div class="col p-0">
                         <h2 class="herosub-h2">Brand Identity</h2>
                         <p class="herosub-p">Our combined design finesse and strategic thinking ensures your brand identity communicates a unique, rich compelling story.</p>
                     </div>
-                    <div class="col herosub-gap">
+                    <div class="col p-0">
                         <h2 class="herosub-h2">Packaging Design</h2>
                         <p class="herosub-p">We curate designs that not only protect but also captivate, leaving lasting impression in shelves and in the health of your customers.</p>
                     </div>
-                    <div class="col">
+                    <div class="col p-0">
                         <h2 class="herosub-h2">Marketing Goods</h2>
                         <p class="herosub-p">From brochures to eye-catching flyers, we transform ideas into tangible assets that resonate to the hearts of your target audience.</p>
                     </div>
                 </div>
             </div>
-            <!--Spacing-->
-            <div class="empty-space w-100"></div>
         </div>
     </div>
     <!--OurClients-->
-    <div class="col trusted d-flex flex-column justify-content-around align-items-center p-0 logos">
+    <section class="my-5 d-flex justify-content-center">
+        <div class="col trusted d-flex flex-column justify-content-around align-items-center px-0 pt-0 pb-3 logos">
         <div></div>
-        <div class="mw1200">
+        <div>
             <p class="row trusted-p m-0 justify-content-center">Our Clients</p>
         </div>
         <div class="row m-0 d-flex justify-content-center align-content-centerm mw1200">
@@ -93,16 +93,18 @@
             </div>
         </div>
         <div></div>
-    </div>
+        </div>
+    </section>
     <!--Spacing-->
     <div class="row empty-space w-100"></div>
     <!--Testimonials-->
-    <h2 class="text-center">What our clients says about us</h2>
-    <div class="testimonials-container d-flex justify-content-center">
+    <section class="my-5 justify-content-center">
+        <h2 class="text-center">What our clients says about us</h2>
+        <div class="testimonials-container d-flex justify-content-center">
         <div class="testimonials row">
             <div class="gradient-left"></div>
             <div class="gradient-right"></div>
-            <div class="carousel" data-flickity='{ "autoPlay": 1500,"prevNextButtons": false, "adaptiveHeight": true }'>
+            <div class="carousel" data-flickity='{ "autoPlay": 3000,"prevNextButtons": false, "adaptiveHeight": true }'>
                 <div class="carousel-cell">
                     <div><p class="mb-0">"Working with Karzhyn Media was an absolute pleasure. They transformed our brand's identity with a stunning logo and an impressive animation that brought our products to life. <i>Their creativity and attention to detail truly exceeded our expectations."</i></p></div>
                     <div class="d-flex flex-row align-items-center">
@@ -140,29 +142,32 @@
                 </div>
               </div>
         </div>
-    </div>
+        </div>
+    </section>
     <!--Spacing-->
     <div class="row empty-space w-100"></div>
     <!--GetInTouch-->
-    <div class="gitbg d-flex justify-content-center align-items-center">
-        <div class="mw1200 d-flex justify-content-center align-items-center form-container h-100 w-100">
-            <div class="getintouch-form p-5 justify-content-center">
-                <h2>Got an awesome idea? Let us turn your idea into a reality!</h2>
-                <form class="d-flex flex-column"action="submit.php" method="post">
-                    <label for="name">Name</label>
-                    <input class="p-2" type="text" id="name" name="name" required>
+    <section class="my-5 justify-content-center">
+        <div class="gitbg d-flex justify-content-center align-items-center">
+            <div class="mw1200 d-flex justify-content-center align-items-center form-container h-100 w-100">
+                <div class="getintouch-form p-5 justify-content-center">
+                    <h2>Got an idea? Let's transform your vision into reality!</h2>
+                    <form class="d-flex flex-column"action="submit.php" method="post">
+                        <label for="name">Name</label>
+                        <input class="p-2" type="text" id="name" name="name" required>
         
-                    <label class="mt-4"for="contact">Phone or Email</label>
-                    <input class="p-2" type="text" id="contact" name="contact" required>
+                        <label class="mt-4"for="contact">Phone or Email</label>
+                        <input class="p-2" type="text" id="contact" name="contact" required>
         
-                    <label class="mt-4" for="message">Your Message</label>
-                    <textarea class="p-2" id="message" name="message" rows="4" required></textarea>
+                        <label class="mt-4" for="message">Your Message</label>
+                        <textarea class="p-2" id="message" name="message" rows="4" required></textarea>
         
-                    <input class="p-2 mt-4" type="submit" value="Send">
-                </form>
+                        <input class="p-2 mt-4" type="submit" value="Send">
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--Footer-->
     <div class="footer d-flex justify-content-center align-items-center">
         <div class="row mw1200 d-flex justify-content-center align-items-center align-content-center form-container h-100 w-100 pt-5 pb-5">

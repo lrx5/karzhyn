@@ -8,6 +8,7 @@
     --yellow: #FFBE0C;
     --orange: #FF5608;
     --green: #96BE1E;
+    --purpleh: #8d00ce;
 }
 *{
     box-sizing: border-box;
@@ -16,6 +17,37 @@ html, body{
     margin: 0;
     padding: 0;
     height: 100%;
+}
+/*Main w/ Video*/
+.main-header p{
+    font-size: 60px;
+    font-family: Jost, sans-serif;
+    color: black;
+    font-weight: 500;
+    margin-bottom: -10px;
+}
+.main-header span{
+    font-family: Jost, sans-serif;
+    color: black;
+    font-weight: 600;
+}
+.span1 {
+    animation: mh1 16s linear infinite;
+}
+.span2{
+    animation: mh2 16s linear infinite;
+}
+.mhi2{
+    animation: mhl2 16s linear infinite;
+}
+.span3 {
+    animation: mh3 16s linear infinite;
+}
+.span4 {
+    animation: mh4 16s linear infinite;
+}
+.video1{
+    border-radius: 15px;
 }
 header{
     background-color: white;
@@ -56,19 +88,14 @@ header{
 .nav3:hover a,.nav5:hover a{
     color: black;
 }
+.empty-space-small{
+    height: 40px;
+}
 .empty-space{
     height: 80px;
 }
 .hero-container{
     padding: 0;
-}
-.decal1{
-    position: absolute;
-    transform: rotate(90deg);
-    z-index: -10;
-    right: -160px;
-    top: 40px;
-    animation: decal1anim 3s ease-in-out infinite;
 }
 .hero-bg{
     background-color: var(--yellow);
@@ -112,7 +139,7 @@ header{
     font-size: 18px;
 }
 .trusted{
-    background-color: var(--orange);
+    background-color: var(--purple);
     min-height: 400px;
 }
 .trusted-p{
@@ -212,21 +239,23 @@ header{
 /*Get In Touch*/
 .gitbg{
     position: relative;
-    background-image: url("img/getintouch_bg.PNG");
+    background-color: var(--purpleh);
+    /*background-image: url("img/getintouch_bg.PNG");*/
     z-index: -100;
     height: 800px;
 }
 .getintouch-form{
     background-color: white;
     border-radius: 25px;
-    max-width: 830px;
-/* From https://css.glass */
+    max-width: 600px;
+/* From https://css.glass
 background: rgba(255, 255, 255, 0.73);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(12.5px);
 -webkit-backdrop-filter: blur(12.5px);
 border: 1px solid rgba(255, 255, 255, 0.25);
+*/
 }
 .getintouch h2{
     font-family: Jost, sans-serif;
@@ -247,19 +276,6 @@ textarea, input{
 }
 .form-container{
     position: relative;
-}
-.decal2{
-    position: absolute;
-    z-index: -1;
-    left: 5px;
-    top: 60px;
-}
-.decal3{
-    transform: rotate(90deg);
-    position: absolute;
-    z-index: -1;
-    right: -30px;
-    top: 480px;
 }
 .footer{
     position: relative;
@@ -292,14 +308,167 @@ textarea, input{
     margin-bottom: 10px;
     text-decoration: underline;
 }
+section p{
+    color: black;
+    font-size: 18px;
+    font-family: Lato, sans-serif;
+}
+.services p, .contact p{
+    color: black;
+    font-size: 18px;
+    font-family: Lato, sans-serif;
+}
+.button_so { 
+    border: transparent;
+    background-color: var(--purple);
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.button_so p{
+    font-family: Jost, sans-serif;
+    color: white;
+}
+.button_so:hover{
+    border: transparent;
+    background-color: var(--purpleh);
+}
+.button_so_i{ 
+    border: 1px solid white;
+    background-color: var(--purple);
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.button_so_i p{
+    font-family: Jost, sans-serif;
+    color: white;
+}
+.button_so_i:hover{
+    border: 1px solid white;
+    background-color: white;
+}
+.button_so_i:hover p{
+    font-family: Jost, sans-serif;
+    color: var(--purple);
+}
+/*Decal Section*/
+.decal1{
+    position: absolute; 
+    transform: rotate(90deg);
+    z-index: -10;
+    right: -165px;
+    top: 20px;
+    /*animation: decal1anim 8s ease-in-out infinite;*/
+}
+.decal2{
+    position: absolute;
+    z-index: -1;
+    left: 5px;
+    top: 60px;
+}
+.decal3{
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: -1;
+    right: -30px;
+    top: 480px;
+}
+.decal_s1{
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: -1;
+    left: -152px;
+    top: 550px;
+}
+.decal_s2{
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: -1;
+    right: -159px;
+    top: -100px;
+}
+.decal_blob1 img{
+    transform: rotate(200deg);
+    position: absolute;
+    z-index: -1;
+    right: 40px;
+    top: 0px;
+    
+}
+.decal_blob2 img{
+    transform: rotate(20deg);
+    position: absolute;
+    z-index: -1;
+    right: 5px;
+    top: 40px;
+    width: 88%;
+    height: 88%;
+}
+.bg-purple {
+    background-color: var(--purple);
+}
+.bg-green {
+    background-color: var(--green);
+}
+.contact-link1 {
+    color: black;
+    font-size: 26px;
+    font-family: Lato, sans-serif;
+}
+/*keyframes*/
 @keyframes decal1anim {
     0% {
-        right: -160px;
+        right: -165px;
     }
     50% {
-        right: -220px; /* Adjust the distance to move left */
+        right: -230px; /* Adjust the distance to move left */
     }
     100% {
-        right: -160px;
+        right: -165px;
     }
+}
+@keyframes mh1 {
+    0% {color: black;}
+    1% {color: black;}
+    2% {color: var(--purple);}
+    25% {color: var(--purple);}
+    27% {color: black;}
+    50% {color: black;}
+    75% {color: black;}
+    100% {color: black;}
+}
+@keyframes mh2 {
+    0% {color: black;}
+    23% {color: black;}
+    25% {color: var(--blue);}
+    50% {color: var(--blue);}
+    52% {color: black;}
+    75% {color: black;}
+    100% {color: black;}
+}
+@keyframes mhl2 {
+    0% {fill: black;}
+    23% {fill: black;}
+    25% {fill: var(--blue);}
+    50% {fill: var(--blue);}
+    52% {fill: black;}
+    75% {fill: black;}
+    100% {fill: black;}
+}
+@keyframes mh3 {
+    0% {color: black;}
+    25% {color: black;}
+    48% {color: black;}
+    50% {color: var(--yellow);}
+    75% {color: var(--yellow);}
+    77% {color: black;}
+    100% {color: black;}
+}
+@keyframes mh4 {
+    0% {color: var(--orange);}
+    2% {color: black;}
+    25% {color: black;}
+    50% {color: black;}
+    73% {color: black;}
+    75% {color: var(--orange);}
+    100% {color: var(--orange);}
 }
