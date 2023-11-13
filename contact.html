@@ -38,9 +38,9 @@
         </div>
         <div class="col-6 py-5 ps-5 pe-0 container d-flex justify-content-center align-items-center">
             <div class="getintouch-form p-5 justify-content-center w-100">
-                <h2>Tell us about your project</h2>
+                <h2 class="my-4"><span><i class="bi bi-chat-left-fill pe-1"></i></span> Tell us about your project</h2>
                 <form class="d-flex flex-column"action="submit.php" method="post">
-                    <label for="name">Name</label>
+                    <label class="mt-4" for="name">Name</label>
                     <input class="p-2" type="text" id="name" name="name" required>
                 
                     <label class="mt-4"for="contact">Phone or Email</label>
@@ -49,17 +49,20 @@
                     <label class="mt-4" for="message">Your Message</label>
                     <textarea class="p-2" id="message" name="message" rows="4" required></textarea>
                 
-                    <input class="p-2 mt-4" type="submit" value="Send">
+                    <!--oldbutton <input class="p-2 mt-4 input-button" type="submit" value="Send">-->
+                    <div class="mt-4 pb-4">
+                        <button class="rounded-5 button_so m-md-auto"><p class="px-3 py-2 m-0" type="submit" value="Send">Submit</p></button>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
     </section>
     <!--Contact2-->
-    <section class="my-5 d-flex justify-content-center bg-purple">
+    <section class="my-5 py-5 d-flex justify-content-center bg-purple">
         <div class="mw1200 row d-flex container my-5 p-0">
             <div class="col p-0 pe-5 container d-flex justify-content-center align-items-center">
-                <img src="img/contact_openpos.png" class="img-fluid rounded-4" alt="">
+                <img src="img/contact_openpos.png" class="img-fluid rounded-4 quickshadow" alt="">
             </div>
             <div class="col-6 p-0 ps-5 d-flex flex-column justify-content-center">
                 <h1 class="text-white">Grow with us!</h1>
@@ -69,16 +72,53 @@
         </div>
     </section>
     <!--Company Details-->
-    <section class="my-5 d-flex justify-content-center">
-        <div class="mw1200 w-100 d-flex container p-0">
-            <div class="col-3 container d-flex flex-column justify-content-center p-0">
-                <a href="" class="contact-link1">info@karzhynmedia.com</a><br>
-                <p>Karzhyn Media</p>
-                <p>123 Orchard Road<br>Singapore 238879</p>
-                <p>Commercial Register Number:<br>SG-123.456.789</p>
+    <section class="py-5 d-flex flex-column justify-content-center">
+        <div class="mw1200 w-100 d-flex flex-column container p-0">
+            <h2 class="text-center mb-5">Company Details</h2>
+            <div class="d-flex flex-row my-5">
+                <div class="col-3 container d-flex flex-column justify-content-center p-0">
+                    <a href="" class="contact-link1">info@karzhynmedia.com</a><br>
+                    <p>Karzhyn Media</p>
+                    <p>123 Orchard Road<br>Singapore 238879</p>
+                    <p>Commercial Register Number:<br>SG-123.456.789</p>
+                </div>
+                <div class="col-9 container d-flex align-items-center p-0 ps-5">
+                    <img src="img/contact_companydetails.PNG" class="img-fluid rounded-4 quickshadow" alt="">
+                </div>
             </div>
-            <div class="col-9 container d-flex align-items-center p-0 ps-5">
-                <img src="img/contact_companydetails.PNG" class="img-fluid rounded-4" alt="">
+            <h2 class="text-center my-5">Offices</h2>
+            <div class="d-flex flex-row my-5">
+                <div class="col-3 container d-flex flex-column justify-content-between p-0">
+                    <a href=""></a><h3>Singapore</h3>
+                    <p>123 Orchard Road<br>Singapore 238879</p>
+                    <p>sg@karzhynmedia.com<br> +65 8765 4321</p>
+                    <img src="img/contact_map1.PNG" class="img-fluid rounded-4 quickshadow" alt="">
+                </div>
+                <div class="col-9 container d-flex align-items-center p-0 ps-5">
+                    <img src="img/contact_office1.PNG" class="img-fluid rounded-4 quickshadow" alt="">
+                </div>
+            </div>
+            <div class="d-flex flex-row my-5">
+                <div class="col-3 container d-flex flex-column justify-content-between p-0">
+                    <a href=""></a><h3>Philippines</h3>
+                    <p>A. Mabini St.<br>Manila</p>
+                    <p>ph@karzhynmedia.com<br>+63 2 765 4321</p>
+                    <img src="img/contact_map2.PNG" class="img-fluid rounded-4 quickshadow" alt="">
+                </div>
+                <div class="col-9 container d-flex align-items-center p-0 ps-5">
+                    <img src="img/contact_office2.PNG" class="img-fluid rounded-4 quickshadow" alt="">
+                </div>
+            </div>
+            <div class="d-flex flex-row my-5">
+                <div class="col-3 container d-flex flex-column justify-content-between p-0">
+                    <a href=""></a><h3>Vietnam</h3>
+                    <p>88 Tran Hung Dao Street<br>Hanoi</p>
+                    <p>vn@karzhynmedia.com<br>+84 24 1674 5374</p>
+                    <img src="img/contact_map3.PNG" class="img-fluid rounded-4 quickshadow" alt="">
+                </div>
+                <div class="col-9 container d-flex align-items-center p-0 ps-5">
+                    <img src="img/contact_office3.PNG" class="img-fluid rounded-4 quickshadow" alt="">
+                </div>
             </div>
         </div>
     </section>

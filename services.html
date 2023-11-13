@@ -94,24 +94,25 @@
         <div class="empty-space w-100"></div>
     </section>
     <!--GetInTouch-->
-    <section class="my-5 justify-content-center">
-        <div class="gitbg d-flex justify-content-center align-items-center">
-            <div class="mw1200 d-flex justify-content-center align-items-center form-container h-100 w-100">
-                <div class="getintouch-form p-5 justify-content-center">
-                    <h2>Got an idea? Let's transform your vision into reality!</h2>
-                    <form class="d-flex flex-column"action="submit.php" method="post">
-                        <label for="name">Name</label>
-                        <input class="p-2" type="text" id="name" name="name" required>
-        
-                        <label class="mt-4"for="contact">Phone or Email</label>
-                        <input class="p-2" type="text" id="contact" name="contact" required>
-        
-                        <label class="mt-4" for="message">Your Message</label>
-                        <textarea class="p-2" id="message" name="message" rows="4" required></textarea>
-        
-                        <input class="p-2 mt-4" type="submit" value="Send">
-                    </form>
-                </div>
+    <section class="d-flex align-items-center justify-content-center gitbg ">
+        <div class="mw1200 my-5 py-5 d-flex justify-content-center align-items-center form-container h-100 w-100">
+            <div class="getintouch-form p-5 justify-content-center w-100">
+                <h2 class="my-4"><span><i class="bi bi-chat-left-fill pe-1"></i></span> Get in touch with Karzhyn Media today!</h2>
+                <form class="d-flex flex-column"action="submit.php" method="post">
+                    <label class="mt-4" for="name">Name</label>
+                    <input class="p-2" type="text" id="name" name="name" required>
+                
+                    <label class="mt-4"for="contact">Phone or Email</label>
+                    <input class="p-2" type="text" id="contact" name="contact" required>
+                
+                    <label class="mt-4" for="message">Your Message</label>
+                    <textarea class="p-2" id="message" name="message" rows="4" required></textarea>
+                
+                    <!--oldbutton <input class="p-2 mt-4 input-button" type="submit" value="Send">-->
+                    <div class="mt-4 pb-4">
+                        <button class="rounded-5 button_so m-md-auto"><p class="px-3 py-2 m-0" type="submit" value="Send">Submit</p></button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>

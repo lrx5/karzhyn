@@ -9,6 +9,7 @@
     --orange: #FF5608;
     --green: #96BE1E;
     --purpleh: #8d00ce;
+    --lpurple: #F7E5FF;
 }
 *{
     box-sizing: border-box;
@@ -244,10 +245,25 @@ header{
     z-index: -100;
     height: 800px;
 }
+.quickshadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.glasspurple{
+    /* From https://css.glass */
+position: relative;
+z-index: 1;
+background: rgba(175, 0, 255, 0.36);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.9px);
+-webkit-backdrop-filter: blur(5.9px);
+}
 .getintouch-form{
     background-color: white;
     border-radius: 25px;
     max-width: 600px;
+    /*box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 /* From https://css.glass
 background: rgba(255, 255, 255, 0.73);
 border-radius: 16px;
@@ -265,14 +281,28 @@ border: 1px solid rgba(255, 255, 255, 0.25);
 .getintouch p, label{
     font-family: Lato, sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    margin: 0;
+    font-size: 14px;
+    color:var(--purpleh);
+}
+.getintouch-form > h2{
+    color:var(--purple);
+}
+.getintouch-form span{
+    color:var(--purpleh);
+    font-size: 24px;
+}
+.formp{
+    font-family: Lato, sans-serif;
+    font-size: 8px;
 }
 textarea, input{
     border-radius: 10px;
     border-width: 1px;
-    border-color: #8EACE5;
-    background-color: var(--lightblue);
+    border-color: var(--purple);
+    background-color: var(--lpurple);
+}
+.input-button{
+    background-color: var(--purple);
 }
 .form-container{
     position: relative;
