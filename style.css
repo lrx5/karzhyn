@@ -9,6 +9,7 @@
     --orange: #FF5608;
     --green: #96BE1E;
     --purpleh: #8d00ce;
+    --purpled: #4d3646;
     --lpurple: #F7E5FF;
 }
 *{
@@ -18,6 +19,9 @@ html, body{
     margin: 0;
     padding: 0;
     height: 100%;
+}
+html{
+    overflow-x: hidden;
 }
 /*Main w/ Video*/
 .main-header p{
@@ -234,8 +238,12 @@ header{
     width:8%;
     content: '';
 }
-.gray-text {
+.gray-text{
     color: #6e7f87;
+}
+.wmkd{
+    height: 100%;
+    border: solid 1px #6e7f8766;
 }
 /*Get In Touch*/
 .gitbg{
@@ -243,7 +251,9 @@ header{
     background-color: var(--purpleh);
     /*background-image: url("img/getintouch_bg.PNG");*/
     z-index: -100;
-    height: 800px;
+}
+textarea{
+    min-height: 100px;
 }
 .quickshadow{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -313,9 +323,6 @@ textarea, input{
     background-color: var(--white);
     height: 300px;
 }
-.footer-offset{
-    margin-left: 80px;
-}
 .footer-a p{
     color: black;
     font-family: Lato, sans-serif;
@@ -344,7 +351,6 @@ section p{
     font-family: Lato, sans-serif;
 }
 .services p, .contact p{
-    color: black;
     font-size: 18px;
     font-family: Lato, sans-serif;
 }
@@ -380,13 +386,83 @@ section p{
     font-family: Jost, sans-serif;
     color: var(--purple);
 }
+.n-extend1, .n-extend2, .n-extend3, .n-extend4{
+    width: 100%;
+    height: 135px;
+    background-color: white;
+    bottom: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+.n-extend1:hover{
+    height: 278px;
+}
+.n-extend2:hover{
+    height: 225px;
+}
+.n-extend3:hover{
+    height: 260px;
+}
+.n-extend4:hover{
+    height: 238px;
+}
+.c_co1,.c_co2,.c_co3,.c_co4,.c_co5,.c_co6{
+    background-color: transparent;
+    transition: 0.3s;
+}
+.c_co1:hover,.c_co2:hover,.c_co3:hover,.c_co4:hover,.c_co5:hover,.c_co6:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: var(--purple);
+}
+.c_co1:hover p,.c_co2:hover p,.c_co3:hover p,.c_co4:hover p,.c_co5:hover p,.c_co6:hover p{
+    color: white;
+}
+.c_co1:hover h4,.c_co2:hover h4,.c_co3:hover h4,.c_co4:hover h4,.c_co5:hover h4,.c_co6:hover h4{
+    color: white;
+}
+.text-purple{
+    color: var(--purple);
+}
+.text-purpleh{
+    color: var(--purpleh);
+}
+.text-purpled{
+    color: var(--purpled);
+}
+.info p, .owfaq p{
+    color: var(--purpled);
+}
+.p-img-container{
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+}
+.p-img{
+    height: auto;
+    width: auto;
+    position: absolute;
+}
+.p-img1{
+    height: 100%;
+    width: auto;
+    position: absolute;
+    transform: translateX(-78px);
+}
 /*Decal Section*/
 .decal1{
     position: absolute; 
     transform: rotate(90deg);
     z-index: -10;
-    right: -165px;
-    top: 20px;
+    right: 170px;
+    top: 130px;
+    /*animation: decal1anim 8s ease-in-out infinite;*/
+}
+.decal1a{
+    position: absolute; 
+    transform: rotate(90deg);
+    z-index: -10;
+    left: -150px;
+    top: 140px;
     /*animation: decal1anim 8s ease-in-out infinite;*/
 }
 .decal2{
@@ -406,15 +482,15 @@ section p{
     transform: rotate(90deg);
     position: absolute;
     z-index: -1;
-    left: -152px;
-    top: 550px;
+    left: -159px;
+    top: -90px;
 }
 .decal_s2{
     transform: rotate(90deg);
     position: absolute;
-    z-index: -1;
+    z-index: -10;
     right: -159px;
-    top: -100px;
+    top: -50px;
 }
 .decal_blob1 img{
     transform: rotate(200deg);
@@ -440,7 +516,12 @@ section p{
     background-color: var(--green);
 }
 .contact-link1 {
-    color: black;
+    color: var(--purple);
+    font-size: 26px;
+    font-family: Lato, sans-serif;
+}
+.contact-link1:hover {
+    color: var(--purpled);
     font-size: 26px;
     font-family: Lato, sans-serif;
 }

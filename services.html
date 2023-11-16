@@ -26,19 +26,46 @@
             </div>
         </div>
     </header>
-    <!--Spacing-->
-    <div class="row empty-space w-100"></div>
-    <!--Sections-->
-    <!--Spacing-->
-    <section>
-        <div class="empty-space-small w-100"></div>
+    <!--ServicesHero-->
+    <section class="my-5 d-flex justify-content-center">
+        <div class="mw1200 d-flex container p-0 justify-content-between">
+            <div class="col-6 py-5 pe-5 d-flex flex-column justify-content-center">
+                <h1 class="hero-h1 pb-4 m-0">The Team of Multimedia Experts</h1>
+                <p class="text-purpled">Our international multimedia group works as a key partner to young enterprises and mid-market firms. We help our clients start their business the right way in having their backs covered in their design needs. </p>
+                <div class="d-flex justify-content-between">
+                    <a href="#services_branding"><button class="rounded-5 button_so"><p class="px-3 py-2 m-0">Branding</p></button></a>
+                    <a href="#services_logo"><button class="rounded-5 button_so"><p class="px-3 py-2 m-0">Logo</p></button></a>
+                    <a href="#services_packaging"><button class="rounded-5 button_so"><p class="px-3 py-2 m-0">Packaging</p></button></a>
+                    <a href="#services_marketing"><button class="rounded-5 button_so"><p class="px-3 py-2 m-0">Marketing</p></button></a>
+                </div>
+            </div>
+            <div class="col-6 py-5 ps-5 pe-0 container d-flex justify-content-center align-items-center">
+                <img src="img/services_hero.PNG" class="img-fluid rounded-4 quickshadow" alt="">
+            </div>
+        </div>
+    </section>
+    <!--SpecializedServices-->
+    <section class="py-5 d-flex justify-content-center bg-purple">
+        <div class="mw1200 py-5 d-flex container p-0 justify-content-between">
+            <div class="col-6 py-5 pe-5 d-flex flex-column justify-content-center">
+                <h1 class="text-white mb-3">Specialized Services</h1>
+                <p class="text-white">Is there a different, but related service that you would like us to do? Send us an inquiry and we'll be happy to assist you in your multimedia needs.</p>
+                <div><a href="contact.html"><button class="rounded-5 button_so_i"><p class="px-3 py-2 m-0">Contact Us</p></button></a></div>
+            </div>
+            <div class="col-6 container d-flex justify-content-end align-items-center p-0">
+                <img src="img/services_specialized.PNG" class=" img-fluid rounded-4 quickshadow" width="90%" class="" alt="">
+            </div>
+        </div>
     </section>
     <!--Branding-->
-    <section class="m-2 d-flex justify-content-center">
+    <div class="pt-5 d-flex flex-column justify-content-center align-items-center">
+        <h1 class="text-purple pt-5">Our Offered Services</h1>
+    </div>
+    <section id="services_branding" class="m-2 pt-5 d-flex justify-content-center">
         <div class="mw1200 w-100 row d-flex justify-content-center container p-0">
             <div class="col-6 py-5 ps-0 pe-5 d-flex flex-column justify-content-center">
-                <h1><img class="mb-2" src="svg/services_star.svg" alt="logo-icon" width="50px"> Branding</h1>
-                <p>Crafting a captivating brand is not just a necessity; it's the beating heart of your vision and company. Our dedicated team will go the extra mile to ensure your customers are left with a remarkable, enduring impression.</p>
+                <h1 class="text-purple"><i class="bi bi-star-fill"></i> Branding</h1>
+                <p class="text-purpled">Crafting a captivating brand is not just a necessity; it's the beating heart of your vision and company. Our dedicated team will go the extra mile to ensure your customers are left with a remarkable, enduring impression.</p>
                 <div><button class="rounded-5 button_so"><p class="px-3 py-2 m-0">See Offers</p></button></div>
             </div>
             <div class="col-6 container d-flex justify-content-end align-items-center">
@@ -47,13 +74,13 @@
         </div>
     </section>
     <!--Logo-->
-    <section class="m-2 d-flex justify-content-center">
+    <section id="services_logo" class="m-2 d-flex justify-content-center position-relative">
         <div class="position-absolute decal_s1"><img src="img/decal_purple_mini.png" alt=""></div>
         <div class="mw1200 w-100 row d-flex justify-content-center container p-0">
             <div class="col-6 py-5 ps-0 pe-5 d-flex flex-column justify-content-center">
-                <div class="row"><h1 class=""><img class="mb-2 mt-1" src="svg/services_circle.svg" alt="logo-icon" width="50px"> Logo Making</h1></div>
-                <div class="row"><p>We will craft logos that not only captivate your customers but also eloquently convey your brand's essence and its full story.</p></div>
-                <div class=""><button class="rounded-5 button_so"><p class="px-3 py-2 m-0">See Offers</p></button></div>
+                <div><h1 class="text-purple"><i class="bi bi-circle-fill"></i> Logo Making</h1></div>
+                <div><p class="text-purpled">We will craft logos that not only captivate your customers but also eloquently convey your brand's essence and its full story.</p></div>
+                <div><button class="rounded-5 button_so"><p class="px-3 py-2 m-0">See Offers</p></button></div>
             </div>
             <div class="col-6 container d-flex justify-content-end align-items-center p-0 m-0">
                 <img src="img/services_logo.PNG" width="90%" class="" alt="">
@@ -61,11 +88,11 @@
         </div>
     </section>
     <!--Packaging-->
-    <section class="m-2 d-flex justify-content-center">
+    <section id="services_packaging" class="m-2 d-flex justify-content-center">
         <div class="mw1200 w-100 row d-flex justify-content-center container p-0">
             <div class="col-6 py-5 ps-0 pe-5 d-flex flex-column justify-content-center">
-                <h1><img class="mb-2 mt-1" src="svg/services_box.svg" alt="logo-icon" width="50px"> Packaging</h1>
-                <p>Our team ensures your packaging needs to be both safety-certified and  eye-catching making it a spotlight on shelves displays for an increased customer attention.</p>
+                <h1 class="text-purple"><i class="bi bi-box-fill"></i> Packaging</h1>
+                <p class="text-purpled">Our team ensures your packaging needs to be both safety-certified and  eye-catching making it a spotlight on shelves displays for an increased customer attention.</p>
                 <div><button class="rounded-5 button_so"><p class="px-3 py-2 m-0">See Offers</p></button></div>
             </div>
             <div class="col-6 container d-flex justify-content-end align-items-center position-relative m-0 py-0 ps-5 pe-0">
@@ -75,12 +102,12 @@
         </div>
     </section>
     <!--Marketing-->
-    <section class="m-2 d-flex justify-content-center position-relative">
+    <section id="services_marketing" class="m-2 d-flex justify-content-center position-relative">
         <div class="position-absolute decal_s2"><img src="img/decal_purple_mini.png" alt=""></div>
         <div class="mw1200 w-100 row d-flex justify-content-center container p-0">
             <div class="col-6 py-5 ps-0 pe-5 d-flex flex-column justify-content-center">
-                <h1><img class="mb-3 mt-1" src="svg/services_bag.svg" alt="logo-icon" width="50px"> Marketing</h1>
-                <p>Marketing wields a direct influence on sales, cementing its vital role in your brand's financial prosperity. We excel in the art of fusing traditional and digital marketing, forging a huge impact on sales.</p>
+                <h1 class="text-purple"><i class="bi bi-bag-fill"></i> Marketing</h1>
+                <p class="text-purpled">Marketing wields a direct influence on sales, cementing its vital role in your brand's financial prosperity. We excel in the art of fusing traditional and digital marketing, forging a huge impact on sales.</p>
                 <div><button class="rounded-5 button_so"><p class="px-3 py-2 m-0">See Offers</p></button></div>
             </div>
             <div class="col-6 container d-flex justify-content-end align-items-center position-relative m-0 py-0 ps-5 pe-0">
@@ -94,7 +121,7 @@
         <div class="empty-space w-100"></div>
     </section>
     <!--GetInTouch-->
-    <section class="d-flex align-items-center justify-content-center gitbg ">
+    <section class="d-flex align-items-center justify-content-center gitbg mt-5">
         <div class="mw1200 my-5 py-5 d-flex justify-content-center align-items-center form-container h-100 w-100">
             <div class="getintouch-form p-5 justify-content-center w-100">
                 <h2 class="my-4"><span><i class="bi bi-chat-left-fill pe-1"></i></span> Get in touch with Karzhyn Media today!</h2>
@@ -119,39 +146,48 @@
     <!--Spacing-->
     <div class="row empty-space w-100"></div>
     <!--Footer-->
-    <div class="footer d-flex justify-content-center align-items-center">
-        <div class="row mw1200 d-flex justify-content-center align-items-center align-content-center form-container h-100 w-100 pt-5 pb-5">
-            <div class="col h-100 d-flex flex-column align-content-center footer-a footer-offset">
-                <p>Services</p>
-                <a href="">Logo Design</a>
-                <a href="">Brand Identity</a>
-                <a href="">Packaging Design</a>
-                <a href="">Marketing Goods</a>
-            </div>
-            <div class="col h-100 d-flex flex-column footer-a">
-                <p>About</p>
-                <a href="">Initiating Startups</a>
-                <a href="">Meet The Team</a>
-                <a href="">Core Principles</a>
-            </div>
-            <div class="col h-100 d-flex flex-column footer-a">
-                <p>Projects</p>
-                <a href="">Clients</a>
-                <a href="">Case Studies</a>
-                <a href="">Achievements</a>
-            </div>
-            <div class="col h-100 d-flex flex-column footer-a">
-                <p>Career</p>
-                <a href="">Illustrator</a>
-                <a href="">Designer</a>
-                <a href="">Animator</a>
-                <a href="">Marketing</a>
-            </div>
-            <div class="col h-100 d-flex flex-column footer-a">
-                <p>Contact</p>
-                <a href="">Singapore Main HQ</a>
-                <a href="">Philippines Sub HQ</a>
-                <a href="">Vietnam Sub HQ</a>
+    <div class="footer py-5 d-flex justify-content-center align-items-center">
+        <div class="container mw1200">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <div class="col-auto d-flex flex-column footer-a">
+                        <a href=""><p>info@karzhynmedia.com</p></a>
+                        <a href="">SG +65 2665 7821</a>
+                        <a href="">PH +63 2 985 7074</a>
+                        <a href="">VN +84 24 1674 5374</a>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center footer-a">
+                    <div class="col-auto d-flex flex-column footer-a">
+                        <p>About us</p>
+                        <a href="index.html">What We Do</a>
+                        <a href="index.html#index_testimonials">Testimonials</a>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center footer-a">
+                    <div class="col-auto d-flex flex-column footer-a">
+                        <p>Services</p>
+                        <a href="services.html#services_branding">Branding</a>
+                        <a href="services.html#services_logo">Logo</a>
+                        <a href="services.html#services_packaging">Packaging</a>
+                        <a href="services.html#services_marketing">Marketing</a>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center footer-a">
+                    <div class="col-auto d-flex flex-column footer-a">
+                        <p>Projects</p>
+                        <a href="">Clients</a>
+                        <a href="projects.html#projects_cs">Case Studies</a>
+                        <a href="">Achievements</a>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center footer-a">
+                    <div class="col-auto d-flex flex-column footer-a">
+                        <p>Career</p>
+                        <a href="career.html#career_availablepos">Open Positions</a>
+                        <a href="career.html#career_ourvalues">Our Values</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
