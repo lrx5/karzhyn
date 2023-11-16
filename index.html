@@ -11,23 +11,49 @@
     <script src="script.js"></script>
 </head>
 <body class="d-flex flex-column">
-    <!--Header-->
-    <header class="w-100 d-flex flex-row justify-content-center align-items-center">
-        <div class="w-75 h-100 d-flex flex-row justify-content-center align-items-center">
-            <a href="main.html" class="w-100">
-            <img class="karzhynlogo"src="img/karzhynlogo.png" alt="karzhynlogo">
-            </a>
-            <div class="d-flex flex-row justify-content-center align-content-center">
-                <div class="p-4 nav1"><a href="index.html" class="nav-links text-decoration-none ">ABOUT</a></div>
-                <div  class="p-4 nav2"><a href="services.html" class="nav-links text-decoration-none ">SERVICES</a></div>
-                <div class="p-4 nav3 "><a href="projects.html" class="nav-links text-decoration-none">PROJECTS</a></div>
-                <div class="p-4 nav4 "><a href="career.html" class="nav-links text-decoration-none">CAREER</a></div>
-                <div class="p-4 nav5 "><a href="contact.html" class="nav-links text-decoration-none">CONTACT</a></div>
+    <!--NavLarge-->
+    <header class="d-flex flex-row justify-content-center align-items-center sticky-lg-top d-none d-lg-block">
+        <div class="container d-flex flex-row justify-content-center align-items-center mw1200 p-0">
+            <div class="container p-0">
+                <a href="main.html" class="container p-0">
+                    <img class="karzhynlogo"src="img/karzhynlogo.png" alt="karzhynlogo">
+                </a>
+            </div>
+            <div class="d-flex flex-row justify-content-center align-items-center">
+                <div class="nav1 d-flex align-items-center">
+                    <a href="index.html" class="p-4 nav-links text-decoration-none">ABOUT</a>
+                </div>
+                <div class="nav2 d-flex align-items-center">
+                    <a href="services.html" class="p-4 nav-links text-decoration-none">SERVICES</a></div>
+                <div class="nav3 d-flex align-items-center">
+                    <a href="projects.html" class="p-4 nav-links text-decoration-none">PROJECTS</a>
+                </div>
+                <div class="nav4 d-flex align-items-center">
+                    <a href="career.html" class="p-4 nav-links text-decoration-none d-flex align-items-center">CAREER</a>
+                </div>
+                <div class="nav5 d-flex align-items-center">
+                    <a href="contact.html" class="p-4 nav-links text-decoration-none">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--NavSmall-->
+    <header class="d-flex flex-row justify-content-center align-items-center sticky-lg-top d-lg-none">
+        <div class="container d-flex flex-row justify-content-between align-items-center mw1200 px-4">
+            <div class="d-flex ">
+                <a href="main.html" class="container p-0">
+                    <img class="karzhynlogo"src="img/karzhynlogo.png" alt="karzhynlogo">
+                </a>
+            </div>
+            <div class="d-flex flex-row justify-content-center align-items-center">
+                <a href="">
+                    <i class="bi bi-list hamburger"></i>
+                </a>
             </div>
         </div>
     </header>
     <!--Hero-->
-    <div class="hero-container d-flex flex-column justify-content-center align-items-center container-fluid position-relative">
+    <div class="hero-container d-flex flex-column justify-content-center align-items-center container position-relative">
         <img class="decal1" src="img/decal_purple_mini.png" alt="decal_purple_mini">
         <div class="d-flex flex-column align-items-center pt-5 mw1200">
             <div class="row d-flex flex-row justify-content-center">
@@ -70,28 +96,26 @@
         </div>
     </div>
     <!--OurClients-->
-    <section class="my-5 d-flex justify-content-center">
-        <div class="col trusted d-flex flex-column justify-content-around align-items-center px-0 pt-0 pb-3 logos">
-        <div></div>
-        <div>
-            <p class="row trusted-p m-0 justify-content-center">Our Clients</p>
-        </div>
-        <div class="row m-0 d-flex justify-content-center align-content-centerm mw1200">
-            <div class="row mb-4 logo-container align-items-center justify-content-around">
-                <img class="h-100 pr-5" src="img/353.png" alt="threefivethree-logo">
-                <img class="h-75 pr-5" src="img/adp.png" alt="adp-logo">
-                <img class="h-100 pr-5" src="img/SafeBox.png" alt="SafeBox-logo">
-                <img class="h-100 pr-5" src="img/brunch.png" alt="brunch-logo">
-                <img class="h-100 pr-5" src="img/Handiplate.png" alt="Handiplate-logo">
+    <section class="my-5 d-flex justify-content-center bg-purple">
+        <div class="col trusted d-flex flex-column justify-content-around align-items-center px-0 pt-0 mw1200">
+            <div>
+                <p class="row trusted-p m-0 justify-content-center">Our Clients</p>
             </div>
-            <div class="row logo-container align-items-center justify-content-around">
-                <img class="h-100 pr-5" src="img/Lee & Meng.png" alt="Lee&Meng-logo">
-                <img class="h-100 pr-5" src="img/pyra.png" alt="Pyra-logo">
-                <img class="h-75 pr-5" src="img/valence.png" alt="Valence-logo">
-                <img class="h-100" src="img/seQ.png" alt="seQ-logo">
+            <div class="row mb-5 d-flex justify-content-center align-content-center">
+                <div class="row mb-5 align-items-center justify-content-around logo-container">
+                    <img class="oc1" src="img/353.png" alt="threefivethree-logo">
+                    <img class="oc2" src="img/adp.png" alt="adp-logo">
+                    <img class="oc3" src="img/SafeBox.png" alt="SafeBox-logo">
+                    <img class="oc4" src="img/brunch.png" alt="brunch-logo">
+                    <img class="oc5" src="img/Handiplate.png" alt="Handiplate-logo">
+                </div>
+                <div class="row align-items-center justify-content-around logo-container">
+                    <img class="oc6" src="img/Lee & Meng.png" alt="Lee&Meng-logo">
+                    <img class="oc7" src="img/pyra.png" alt="Pyra-logo">
+                    <img class="oc8" src="img/valence.png" alt="Valence-logo">
+                    <img class="oc9" src="img/seQ.png" alt="seQ-logo">
+                </div>
             </div>
-        </div>
-        <div></div>
         </div>
     </section>
     <!--Spacing-->
@@ -150,9 +174,9 @@
     <div class="row empty-space w-100"></div>
     <!--WhatMakesKarzhynDifferent?-->
     <section id="career_ourvalues" class="my-5 d-flex justify-content-center">
-        <div class="mw1200 d-flex flex-column container p-0 justify-content-center">
+        <div class="mw1200 d-flex flex-column container p-0 justify-content-center px-5">
             <div class="text-center mb-5"><h1 class="py-5 text-purple">What Makes Karzhyn Different?</h1></div>
-            <div class="row row-cols-3 pb-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 pb-5">
                 <div class="col p-3">
                     <div class="row d-flex flex-column p-4 rounded-4 wmkd">
                         <div class="col-auto text-center">
@@ -283,24 +307,24 @@
     </section>
     <!--Footer-->
     <div class="footer py-5 d-flex justify-content-center align-items-center">
-        <div class="container mw1200">
-            <div class="row">
-                <div class="col d-flex justify-content-center">
-                    <div class="col-auto d-flex flex-column footer-a">
+        <div class="container mw1200 p-5">
+            <div class="row row-cols-1 row-cols-md-5">
+                <div class="col d-flex justify-content-md-center">
+                    <div class="col-auto d-flex flex-column footer-a mb-3 mb-md-0">
                         <a href=""><p>info@karzhynmedia.com</p></a>
                         <a href="">SG +65 2665 7821</a>
                         <a href="">PH +63 2 985 7074</a>
                         <a href="">VN +84 24 1674 5374</a>
                     </div>
                 </div>
-                <div class="col d-flex justify-content-center footer-a">
+                <div class="col d-flex justify-content-md-center footer-a mb-3 mb-md-0">
                     <div class="col-auto d-flex flex-column footer-a">
                         <p>About us</p>
                         <a href="index.html">What We Do</a>
                         <a href="index.html#index_testimonials">Testimonials</a>
                     </div>
                 </div>
-                <div class="col d-flex justify-content-center footer-a">
+                <div class="col d-flex justify-content-md-center footer-a mb-3 mb-md-0">
                     <div class="col-auto d-flex flex-column footer-a">
                         <p>Services</p>
                         <a href="services.html#services_branding">Branding</a>
@@ -309,7 +333,7 @@
                         <a href="services.html#services_marketing">Marketing</a>
                     </div>
                 </div>
-                <div class="col d-flex justify-content-center footer-a">
+                <div class="col d-flex justify-content-md-center footer-a mb-3 mb-md-0">
                     <div class="col-auto d-flex flex-column footer-a">
                         <p>Projects</p>
                         <a href="">Clients</a>
@@ -317,7 +341,7 @@
                         <a href="">Achievements</a>
                     </div>
                 </div>
-                <div class="col d-flex justify-content-center footer-a">
+                <div class="col d-flex justify-content-md-center footer-a mb-3 mb-md-0">
                     <div class="col-auto d-flex flex-column footer-a">
                         <p>Career</p>
                         <a href="career.html#career_availablepos">Open Positions</a>

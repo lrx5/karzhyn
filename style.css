@@ -23,6 +23,15 @@ html, body{
 html{
     overflow-x: hidden;
 }
+/*Mobile Nav*/
+.hamburger{
+    font-size: 60px;
+    color: #1F1F1F;
+}
+.collapsing{
+    transition: 1s;
+}
+
 /*Main w/ Video*/
 .main-header p{
     font-size: 60px;
@@ -31,33 +40,29 @@ html{
     font-weight: 500;
     margin-bottom: -10px;
 }
-.main-header span{
-    font-family: Jost, sans-serif;
-    color: black;
-    font-weight: 600;
-}
 .span1 {
     animation: mh1 16s linear infinite;
+    font-weight: 700;
 }
 .span2{
     animation: mh2 16s linear infinite;
-}
-.mhi2{
-    animation: mhl2 16s linear infinite;
+    font-weight: 700;
 }
 .span3 {
     animation: mh3 16s linear infinite;
+    font-weight: 700;
 }
 .span4 {
     animation: mh4 16s linear infinite;
+    font-weight: 700;
 }
 .video1{
     border-radius: 15px;
 }
 header{
     background-color: white;
-    height: 99px;
-    padding: 0;
+    height: 111px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .karzhynlogo{
     height: 64px;
@@ -69,6 +74,7 @@ header{
     font-weight: 700;
 }
 .nav1,.nav2,.nav3,.nav4,.nav5{
+    height: 111px;
     background-color: transparent;
     transition: background-color 0.3s;
 }
@@ -153,12 +159,41 @@ header{
     font-weight: 500;
     font-size: 48px;
 }
-.logos img{
-    width: auto; /* Set your desired width */
-    height: auto; /* Allow the height to adjust proportionally */
+.logo-container .oc1{
+    height: auto;
+    width: 100px;
 }
-.logo-container{
-    height: 64px;
+.logo-container .oc2{
+    height: auto;
+    width: 120px;
+}
+.logo-container .oc3{
+    height: auto;
+    width: 70px;
+}
+.logo-container .oc4{
+    height: auto;
+    width: 150px;
+}
+.logo-container .oc5{
+    height: auto;
+    width: 80px;
+}
+.logo-container .oc6{
+    height: auto;
+    width: 180px;
+}
+.logo-container .oc7{
+    height: auto;
+    width: 60px;
+}
+.logo-container .oc8{
+    height: auto;
+    width: 180px;
+}
+.logo-container .oc9{
+    height: auto;
+    width: 120px;
 }
 .c-container{
     max-height: 400px;
@@ -321,7 +356,7 @@ textarea, input{
     position: relative;
     z-index: -100;
     background-color: var(--white);
-    height: 300px;
+    height: auto;
 }
 .footer-a p{
     color: black;
@@ -453,8 +488,8 @@ section p{
     position: absolute; 
     transform: rotate(90deg);
     z-index: -10;
-    right: 170px;
-    top: 130px;
+    right: -100px;
+    top: 134px;
     /*animation: decal1anim 8s ease-in-out infinite;*/
 }
 .decal1a{
@@ -582,4 +617,53 @@ section p{
     73% {color: black;}
     75% {color: var(--orange);}
     100% {color: var(--orange);}
+}
+/*Responsive*/
+@media (max-width: 1199px) {
+    .main-header p{
+        font-size: 49px;
+        font-family: Jost, sans-serif;
+        font-weight: 500;
+    }
+    .main-header .span1, .main-header .span1, .main-header .span3, .main-header .span4{
+        font-size: 49px;
+        font-family: Jost, sans-serif;
+        font-weight: 600;
+    }
+}
+@media (max-width: 999px) {
+    .main-header p{
+        font-size: 39px;
+        font-family: Jost, sans-serif;
+        font-weight: 500;
+    }
+    .main-header .span1, .main-header .span1, .main-header .span3, .main-header .span4{
+        font-size: 39px;
+        font-family: Jost, sans-serif;
+        font-weight: 600;
+    }
+}
+@media (max-width: 799px) {
+    .main-header p{
+        font-size: 28px;
+        font-family: Jost, sans-serif;
+        font-weight: 500;
+    }
+    .main-header .span1, .main-header .span1, .main-header .span3, .main-header .span4{
+        font-size: 28px;
+        font-family: Jost, sans-serif;
+        font-weight: 600;
+    }
+}
+@media (max-width: 399px) {
+    .main-header p{
+        font-size: 2rem;
+        font-family: Jost, sans-serif;
+        font-weight: 500;
+    }
+    .main-header .span1, .main-header .span1, .main-header .span3, .main-header .span4{
+        font-size: 2rem;
+        font-family: Jost, sans-serif;
+        font-weight: 600;
+    }
 }

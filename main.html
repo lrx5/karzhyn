@@ -11,24 +11,51 @@
     <script src="script.js"></script>
 </head>
 <body class="d-flex flex-column">
-    <!--Header-->
-    <header class="w-100 d-flex flex-row justify-content-center align-items-center">
-        <div class="w-75 h-100 d-flex flex-row justify-content-center align-items-center">
-            <a href="main.html" class="w-100">
-            <img class="karzhynlogo"src="img/karzhynlogo.png" alt="karzhynlogo">
-            </a>
-            <div class="d-flex flex-row justify-content-center align-content-center">
-                <div class="p-4 nav1"><a href="index.html" class="nav-links text-decoration-none ">ABOUT</a></div>
-                <div  class="p-4 nav2"><a href="services.html" class="nav-links text-decoration-none ">SERVICES</a></div>
-                <div class="p-4 nav3 "><a href="projects.html" class="nav-links text-decoration-none">PROJECTS</a></div>
-                <div class="p-4 nav4 "><a href="career.html" class="nav-links text-decoration-none">CAREER</a></div>
-                <div class="p-4 nav5 "><a href="contact.html" class="nav-links text-decoration-none">CONTACT</a></div>
+    <!--NavLarge-->
+    <header class="d-flex flex-row justify-content-center align-items-center sticky-lg-top d-none d-lg-block">
+        <div class="container d-flex flex-row justify-content-center align-items-center mw1200 p-0">
+            <div class="container p-0">
+                <a href="main.html" class="container p-0">
+                    <img class="karzhynlogo"src="img/karzhynlogo.png" alt="karzhynlogo">
+                </a>
+            </div>
+            <div class="d-flex flex-row justify-content-center align-items-center">
+                <div class="nav1 d-flex align-items-center">
+                    <a href="index.html" class="p-4 nav-links text-decoration-none">ABOUT</a>
+                </div>
+                <div class="nav2 d-flex align-items-center">
+                    <a href="services.html" class="p-4 nav-links text-decoration-none">SERVICES</a></div>
+                <div class="nav3 d-flex align-items-center">
+                    <a href="projects.html" class="p-4 nav-links text-decoration-none">PROJECTS</a>
+                </div>
+                <div class="nav4 d-flex align-items-center">
+                    <a href="career.html" class="p-4 nav-links text-decoration-none d-flex align-items-center">CAREER</a>
+                </div>
+                <div class="nav5 d-flex align-items-center">
+                    <a href="contact.html" class="p-4 nav-links text-decoration-none">CONTACT</a>
+                </div>
             </div>
         </div>
     </header>
+    <!--NavSmall-->
+    <header class="d-flex flex-row justify-content-center align-items-center sticky-lg-top d-lg-none">
+        <div class="container d-flex flex-row justify-content-between align-items-center mw1200 px-4">
+            <div class="d-flex ">
+                <a href="main.html" class="container p-0">
+                    <img class="karzhynlogo"src="img/karzhynlogo.png" alt="karzhynlogo">
+                </a>
+            </div>
+            <div class="d-flex flex-row justify-content-center align-items-center">
+                <a href="">
+                    <i class="bi bi-list hamburger"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!--Main-->
     <section class="d-flex justify-content-center">
-        <div class="mw1200 w-100 row d-flex main-header justify-content-center">
-            <p class="mt-5 p-0">Let us turn your 
+        <div class="mw1200 row mt-5 mx-5 d-flex main-header justify-content-center">
+            <p class="p-0">Let us turn your 
                 <span class="span1">Brand <i class="bi bi-star-fill"></i>,</span> 
                 into life!
             </p>
@@ -49,13 +76,13 @@
         </div>
     </section>
     <section class="py-5 d-flex justify-content-center bg-purple">
-        <div class="mw1200 w-100 row d-flex justify-content-center container p-0">
-            <div class="col-4 py-5 ps-0 pe-5">
+        <div class="mw1200 row flex-md-col justify-content-center container p-0 mx-5">
+            <div class="col-md-4 p-0 order-md-1 pe-md-5 pb-3 pb-md-0">
                 <p class="text-white">Branding</p>
                 <h1 class="text-white mb-3">Forge your Identity</h1>
                 <p class="text-white">Elevate your brand's distinctiveness with the expertise of our exceptional team.</p>
             </div>
-            <div class="col-8 py-5 ps-5 pe-0 ">
+            <div class="col-md-8 p-0 order-md-2 ps-md-5">
                 <video class="w-100 embed-responsive-item video1 quickshadow" autoplay loop muted>
                     <source src="video/placeholdervid.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -63,18 +90,18 @@
             </div>
         </div>
     </section>
-    <section class="m-5 d-flex justify-content-center">
-        <div class="mw1200 w-100 row d-flex justify-content-center container p-0">
-            <div class="col-8 py-5 ps-0 pe-5">
+    <section class="py-5 d-flex justify-content-center">
+        <div class="mw1200 row flex-md-col justify-content-center container p-0 mx-5">
+            <div class="col-md-4 p-0 order-md-2 ps-md-5 pb-3 pb-md-0">
+                <p>Marketing</p>
+                <h1>Starting Boost</h1>
+                <p>Ignite your concept with our partnership, and together we'll propel it to shine above the competition.</p>
+            </div>
+            <div class="col-md-8 p-0 pe-md-5">
                 <video class="w-100 embed-responsive-item video1 quickshadow" autoplay loop muted>
                     <source src="video/placeholdervid.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-            </div>
-            <div class="col-4 py-5 ps-5 pe-0">
-                <p>Marketing</p>
-                <h1>Starting Boost</h1>
-                <p>Ignite your concept with our partnership, and together we'll propel it to shine above the competition.</p>
             </div>
         </div>
     </section>
