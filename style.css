@@ -24,12 +24,29 @@ html{
     overflow-x: hidden;
 }
 /*Mobile Nav*/
-.hamburger{
+.hamburgerstyle{
     font-size: 60px;
     color: #1F1F1F;
 }
 .collapsing{
     transition: 1s;
+}
+.navsmall{
+    position: relative;
+    z-index: 100;
+    background-color: white;
+}
+.navsmallmenu{
+    width: 100%;
+    position: absolute;
+    transform: translateY(-120%);
+    transition: transform 0.2s;
+    z-index: 99;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.navsmallmenushow{
+    transform: translateY(16%);
 }
 
 /*Main w/ Video*/
@@ -135,9 +152,6 @@ header{
 }
 .mw600{
     max-width: 600px;
-}
-.herosub-gap{
-    margin-right: 20px;
 }
 .herosub-h2{
     font-family: Jost, sans-serif;
@@ -429,6 +443,7 @@ section p{
     overflow: hidden;
     transition: height 0.3s ease;
 }
+
 .n-extend1:hover{
     height: 278px;
 }
@@ -470,17 +485,16 @@ section p{
 .p-img-container{
     position: relative;
     overflow: hidden;
-    height: 500px;
+    height: 600px;
 }
 .p-img{
     height: auto;
     width: auto;
-    position: absolute;
+    overflow: hidden;
 }
 .p-img1{
     height: 100%;
     width: auto;
-    position: absolute;
     transform: translateX(-78px);
 }
 /*Decal Section*/
@@ -642,6 +656,34 @@ section p{
         font-family: Jost, sans-serif;
         font-weight: 600;
     }
+    .testimonials-container{
+        height:440px;
+    }
+    .testimonials{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 1200px;
+        height: 100%;
+    }
+    .carousel{
+        background: transparent;
+        height: 350px;
+        width: 100%;
+    }
+    .carousel-cell {
+        position: relative;
+        width: 90%;
+        height: 300px;
+        margin: 20px 10px 20px 0;
+        padding: 36px;
+        border:1px solid #e3e8e9;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
 }
 @media (max-width: 799px) {
     .main-header p{
@@ -654,8 +696,44 @@ section p{
         font-family: Jost, sans-serif;
         font-weight: 600;
     }
+    .testimonials-container{
+        height:640px;
+    }
+    .testimonials{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 1200px;
+        height: 100%;
+    }
+    .carousel{
+        background: transparent;
+        height: 440px;
+        width: 100%;
+    }
+    .carousel-cell {
+        position: relative;
+        width: 80%;
+        height: auto;
+        margin: 20px 10px 20px 0;
+        padding: 36px;
+        border:1px solid #e3e8e9;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .p-img-container{
+        position: relative;
+        overflow: hidden;
+        height: 500px;
+    }
 }
 @media (max-width: 399px) {
+    .hero-h1{
+        font-size: 40px;
+    }
     .main-header p{
         font-size: 2rem;
         font-family: Jost, sans-serif;
@@ -665,5 +743,38 @@ section p{
         font-size: 2rem;
         font-family: Jost, sans-serif;
         font-weight: 600;
+    }
+    .testimonials-container{
+        height:640px;
+    }
+    .testimonials{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 1200px;
+        height: 100%;
+    }
+    .carousel{
+        background: transparent;
+        height: 640px;
+        width: 100%;
+    }
+    .carousel-cell {
+        position: relative;
+        width: 80%;
+        height: auto;
+        margin: 20px 10px 20px 0;
+        padding: 36px;
+        border:1px solid #e3e8e9;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .p-img-container{
+        position: relative;
+        overflow: hidden;
+        height: 400px;
     }
 }

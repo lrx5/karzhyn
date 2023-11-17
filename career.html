@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Karzhyn Media Group</title>
-    <script src="script.js"></script>
 </head>
 <body class="d-flex flex-column"> 
-    <!--Nav-->
-    <header class="d-flex flex-row justify-content-center align-items-center sticky-lg-top">
+    <!--NavLarge-->
+    <header class="d-flex flex-row justify-content-center align-items-center sticky-lg-top d-none d-lg-block">
         <div class="container d-flex flex-row justify-content-center align-items-center mw1200 p-0">
             <div class="container p-0">
                 <a href="main.html" class="container p-0">
@@ -37,46 +36,78 @@
             </div>
         </div>
     </header>
-    <!--Sections-->
+    <!--NavSmall-->
+    <section class="d-flex flex-row justify-content-center align-items-center sticky-lg-top d-lg-none navsmall">
+        <div class="container d-flex flex-row justify-content-between align-items-center mw1200 px-4">
+            <div class="d-flex ">
+                <a href="main.html" class="container p-0">
+                    <img class="karzhynlogo"src="img/karzhynlogo.png" alt="karzhynlogo">
+                </a>
+            </div>
+            <div class="d-flex flex-row justify-content-center align-items-center hamburger">
+                <i class="bi bi-list hamburgerstyle"></i>
+            </div>
+        </div>
+    </section>
+    <!--NavSmallMenu-->
+    <section class="d-flex flex-column justify-content-center sticky-lg-top d-lg-none navsmallmenu">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="nav1 d-flex align-items-center">
+                <a href="index.html" class="p-4 nav-links text-decoration-none">ABOUT</a>
+            </div>
+            <div class="nav2 d-flex align-items-center">
+                <a href="services.html" class="p-4 nav-links text-decoration-none">SERVICES</a></div>
+            <div class="nav3 d-flex align-items-center">
+                <a href="projects.html" class="p-4 nav-links text-decoration-none">PROJECTS</a>
+            </div>
+            <div class="nav4 d-flex align-items-center">
+                <a href="career.html" class="p-4 nav-links text-decoration-none d-flex align-items-center">CAREER</a>
+            </div>
+            <div class="nav5 d-flex align-items-center">
+                <a href="contact.html" class="p-4 nav-links text-decoration-none">CONTACT</a>
+            </div>
+        </div>
+        </div>
+    </section>
     <!--Spacing-->
     <div class="row empty-space-small w-100"></div>
     <!--CareerHero-->
     <section class="py-5 d-flex justify-content-center">
-    <div class="mw1200 py-5 d-flex container p-0 justify-content-between">
-        <div class="col-6 py-5 pe-5 d-flex flex-column justify-content-center">
+    <div class="mw1200 py-5 d-flex container p-0 justify-content-between mx-5 row row-cols-1 row-cols-md-2">
+        <div class="col-md-6 py-md-5 pe-md-5 p-0 py-5 d-flex flex-column justify-content-center">
             <h1 class="pb-4 hero-h1 m-0">Careers at Karzhyn Media</h1>
             <p>Join our global team of multimedia experts. Work remotely or in one of our offices.</p>
             <div><a href="#career_availablepos"><button class="rounded-5 button_so"><p class="px-3 py-2 m-0 text-purpled">Available Positions</p></button></a></div>
         </div>
-        <div class="col-6 container d-flex justify-content-end align-items-center p-0">
-            <img src="img/career_team.PNG" class="rounded-4 quickshadow" width="90%" class="" alt="">
+        <div class="col-md-6 py-md-5 ps-md-5 p-0 pb-5 container d-flex justify-content-center align-items-center">
+            <img src="img/career_team.PNG" class="rounded-4 quickshadow" width="100%" class="" alt="">
         </div>
     </div>
     </section>
     <!--MeetInternationally-->
     <section class="py-5 d-flex justify-content-center bg-purple">
-        <div class="mw1200 py-5 d-flex container p-0 justify-content-between">
-            <div class="col-6 py-5 pe-5 d-flex flex-column justify-content-center">
+        <div class="mw1200 py-5 d-flex container p-0 justify-content-between mx-5 row row-cols-1 row-cols-md-2">
+            <div class="col-md-6 py-md-5 pe-md-5 p-0 py-5 d-flex flex-column justify-content-center">
                 <h1 class="text-white mb-3">Meet Internationally</h1>
                 <p class="text-white">Karzhyn Media is an international multimedia agency that is proud of its 30+ amazing experts who work from different locations, including our offices in Singapore, Philippines, and Vietnam. </p>
                 <div><a href="contact.html#contact_office"><button class="rounded-5 button_so_i"><p class="px-3 py-2 m-0">See Locations</p></button></a></div>
             </div>
-            <div class="col-6 container d-flex justify-content-end align-items-center p-0">
-                <img src="img/career_team2.PNG" class="rounded-4 quickshadow" width="90%" class="" alt="">
+            <div class="col-md-6 py-md-5 ps-md-5 p-0 pb-5 container d-flex justify-content-center align-items-center">
+                <img src="img/career_team2.PNG" class="rounded-4 quickshadow" width="100%" class="" alt="">
             </div>
         </div>
     </section>
     <!--ProsperousWorkplace-->
     <section class="my-5 d-flex justify-content-center">
-        <div class="mw1200 d-flex container p-0 justify-content-between">
-            <div class="col-6 py-5 pe-5 container d-flex justify-content-start align-items-center p-0">
-                <img src="img/career_team3.PNG" class="rounded-4 quickshadow" width="90%" class="" alt="">
-            </div>
-            <div class="col-6 py-5 ps-5 d-flex flex-column justify-content-center">
+        <div class="mw1200 py-5 d-flex container p-0 justify-content-between mx-5 row row-cols-1 row-cols-md-2">
+            <div class="col-md-6 py-md-5 ps-md-5 p-0 py-5 d-flex flex-column justify-content-center order-md-2">
                 <h1 class="mb-3">Prosperous Workplace</h1>
                 <p class="text-purpled">Our vision is to build a professional environment based on the skills of design experts who thrive in an international company. We also aim to deliver extraordinary results for our clients.</p>
                 <p class="text-purpled">Our work is our passion, but at the same time, we care about work-life balance. We are constantly looking to build a better work environment where all employees feel motivated and happy with their work.</p>
                 <div><a href="#career_ourvalues"><button class="rounded-5 button_so"><p class="px-3 py-2 m-0">Our Values</p></button></a></div>
+            </div>
+            <div class="col-md-6 py-md-5 pe-md-5 p-0 pb-5 container d-flex justify-content-center align-items-center order-md-1">
+                <img src="img/career_team3.PNG" class="rounded-4 quickshadow" width="100%" class="" alt="">
             </div>
         </div>
     </section>
@@ -85,39 +116,47 @@
         <div class="mw1200 d-flex flex-column container p-0 justify-content-between align-items-center py-5 mb-5 gap-4">
             <h1 class="text-white mt-5 mb-5">Available Positions</h1>
             <div class="col-8 container d-flex justify-content-center align-items-center p-0 bg-white rounded-4 quickshadow">
-                <div class="d-flex col justify-content-between p-5">
-                    <div class="d-flex row justify-content-start">
+                <div class="d-flex container row row-cols-1 row-cols-md-2 p-5 justify-content-center justify-content-md-between">
+                    <div class="container row col-md-auto d-flex text-center text-md-start p-0">
                         <p class="m-0">Senior 3D Illustrator</p>
                         <p class="m-0 text-purpled"><i class="bi bi-geo-alt-fill"></i> Singapore</p>
                     </div>
-                    <div><button class="rounded-5 button_so"><p class="px-3 py-2 m-0">Details</p></button></div>
+                    <div class="container m-0 p-0 col-md-auto d-flex justify-content-center justify-content-md-end">
+                        <button class="rounded-5 button_so"><p class="px-3 py-2 m-0">Details</p></button>
+                    </div>
                 </div>
             </div>
             <div class="col-8 container d-flex justify-content-center align-items-center p-0 bg-white rounded-4 quickshadow">
-                <div class="d-flex col justify-content-between p-5">
-                    <div class="d-flex row justify-content-start">
+                <div class="d-flex container row row-cols-1 row-cols-md-2 p-5 justify-content-center justify-content-md-between">
+                    <div class="container row col-md-auto d-flex text-center text-md-start p-0">
                         <p class="m-0">Human Resources Manager</p>
                         <p class="m-0 text-purpled"><i class="bi bi-geo-alt-fill"></i> Singapore</p>
                     </div>
-                    <div><button class="rounded-5 button_so"><p class="px-3 py-2 m-0">Details</p></button></div>
+                    <div class="container m-0 p-0 col-md-auto d-flex justify-content-center justify-content-md-end">
+                        <button class="rounded-5 button_so"><p class="px-3 py-2 m-0">Details</p></button>
+                    </div>
                 </div>
             </div>
             <div class="col-8 container d-flex justify-content-center align-items-center p-0 bg-white rounded-4 quickshadow">
-                <div class="d-flex col justify-content-between p-5">
-                    <div class="d-flex row justify-content-start">
+                <div class="d-flex container row row-cols-1 row-cols-md-2 p-5 justify-content-center justify-content-md-between">
+                    <div class="container row col-md-auto d-flex text-center text-md-start p-0">
                         <p class="m-0">Graphic Designer</p>
                         <p class="m-0 text-purpled"><i class="bi bi-geo-alt-fill"></i> Philippines, Manila / Remote</p>
                     </div>
-                    <div><button class="rounded-5 button_so"><p class="px-3 py-2 m-0">Details</p></button></div>
+                    <div class="container m-0 p-0 col-md-auto d-flex justify-content-center justify-content-md-end">
+                        <button class="rounded-5 button_so"><p class="px-3 py-2 m-0">Details</p></button>
+                    </div>
                 </div>
             </div>
             <div class="col-8 container d-flex justify-content-center align-items-center p-0 bg-white rounded-4 quickshadow">
-                <div class="d-flex col justify-content-between p-5">
-                    <div class="d-flex row justify-content-start">
+                <div class="d-flex container row row-cols-1 row-cols-md-2 p-5 justify-content-center justify-content-md-between">
+                    <div class="container row col-md-auto d-flex text-center text-md-start p-0">
                         <p class="m-0">Packaging Designer</p>
                         <p class="m-0 text-purpled"><i class="bi bi-geo-alt-fill"></i> Vietnam, Hanoi / Remote</p>
                     </div>
-                    <div><button class="rounded-5 button_so"><p class="px-3 py-2 m-0">Details</p></button></div>
+                    <div class="container m-0 p-0 col-md-auto d-flex justify-content-center justify-content-md-end">
+                        <button class="rounded-5 button_so"><p class="px-3 py-2 m-0">Details</p></button>
+                    </div>
                 </div>
             </div>
             <div class="col-8 cd-flex flex-column justify-content-center">
@@ -126,9 +165,9 @@
     </section>
     <!--OurValues-->
     <section id="career_ourvalues" class="my-5 d-flex justify-content-center">
-        <div class="mw1200 d-flex flex-column container p-0 justify-content-center">
+        <div class="mw1200 d-flex flex-column container p-0 justify-content-center mx-5">
             <div class="text-center mb-5"><h1 class="py-5 text-purple">Our Values in the Workplace</h1></div>
-            <div class="row row-cols-2 g-5 pb-5">
+            <div class="row row-cols-1 row-cols-md-2 g-5 pb-5">
                 <div class="col py-3 c_co1 rounded-4">
                     <div class="row">
                         <div class="col-auto"><h4 class="text-purple"><i class="bi bi-people-fill"></i></h4></div>
@@ -187,7 +226,7 @@
     </section>
     <!--GetInTouch-->
     <section class="d-flex justify-content-center gitbg">
-        <div class="mw1200 my-5 py-5 d-flex container p-0 justify-content-between">
+        <div class="mw1200 my-5 mx-2 py-5 d-flex container p-0 justify-content-between">
             <div class="container d-flex justify-content-center align-items-center">
                 <div class="getintouch-form p-5 justify-content-center w-100">
                     <h2 class="my-4"><span><i class="bi bi-chat-left-fill pe-1"></i></span> Get in touch with Karzhyn Media today!</h2>
@@ -256,6 +295,7 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>

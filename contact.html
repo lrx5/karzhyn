@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Karzhyn Media Group</title>
-    <script src="script.js"></script>
 </head>
 <body class="contact d-flex flex-column">
-    <!--Nav-->
-    <header class="d-flex flex-row justify-content-center align-items-center sticky-lg-top">
+    <!--NavLarge-->
+    <header class="d-flex flex-row justify-content-center align-items-center sticky-lg-top d-none d-lg-block">
         <div class="container d-flex flex-row justify-content-center align-items-center mw1200 p-0">
             <div class="container p-0">
                 <a href="main.html" class="container p-0">
@@ -37,17 +36,48 @@
             </div>
         </div>
     </header>
-    <!--Spacing-->
-    <div class="row empty-space-small w-100"></div>
+    <!--NavSmall-->
+    <section class="d-flex flex-row justify-content-center align-items-center sticky-lg-top d-lg-none navsmall">
+        <div class="container d-flex flex-row justify-content-between align-items-center mw1200 px-4">
+            <div class="d-flex ">
+                <a href="main.html" class="container p-0">
+                    <img class="karzhynlogo"src="img/karzhynlogo.png" alt="karzhynlogo">
+                </a>
+            </div>
+            <div class="d-flex flex-row justify-content-center align-items-center hamburger">
+                <i class="bi bi-list hamburgerstyle"></i>
+            </div>
+        </div>
+    </section>
+    <!--NavSmallMenu-->
+    <section class="d-flex flex-column justify-content-center sticky-lg-top d-lg-none navsmallmenu">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="nav1 d-flex align-items-center">
+                <a href="index.html" class="p-4 nav-links text-decoration-none">ABOUT</a>
+            </div>
+            <div class="nav2 d-flex align-items-center">
+                <a href="services.html" class="p-4 nav-links text-decoration-none">SERVICES</a></div>
+            <div class="nav3 d-flex align-items-center">
+                <a href="projects.html" class="p-4 nav-links text-decoration-none">PROJECTS</a>
+            </div>
+            <div class="nav4 d-flex align-items-center">
+                <a href="career.html" class="p-4 nav-links text-decoration-none d-flex align-items-center">CAREER</a>
+            </div>
+            <div class="nav5 d-flex align-items-center">
+                <a href="contact.html" class="p-4 nav-links text-decoration-none">CONTACT</a>
+            </div>
+        </div>
+        </div>
+    </section>
     <!--StartWithUs-->
-    <section class="my-5 d-flex justify-content-center">
-    <div class="mw1200 d-flex container p-0 justify-content-between">
-        <div class="col-6 py-5 pe-5 d-flex flex-column justify-content-center">
+    <section class="d-flex justify-content-center">
+    <div class="mw1200 m-5 d-flex container p-0 justify-content-between row row-cols-1 row-cols-md-2">
+        <div class="col-md-6 py-md-5 pe-md-5 p-0 py-5 d-flex flex-column justify-content-center">
             <h1 class="hero-h1 pb-4 m-0">Start With Us!</h1>
             <p class="text-purpled">Get in touch with us today to schedule a consultation or delve into a conversation about your marketing hurdles. Being a comprehensive digital marketing agency, we are well-equipped to assist you with SEO, PPC, social media and display advertising, content marketing, and digital PR.</p>
             <div><a href="#contact_office"><button class="rounded-5 button_so"><p class="px-3 py-2 m-0">See Locations</p></button></a></div>
         </div>
-        <div class="col-6 py-5 ps-5 pe-0 container d-flex justify-content-center align-items-center">
+        <div class="col-md-6 py-md-5 ps-md-5 p-0 pb-5 container d-flex justify-content-center align-items-center">
             <div class="getintouch-form p-5 justify-content-center w-100">
                 <h2 class="my-4"><span><i class="bi bi-chat-left-fill pe-1"></i></span> Tell us about your project</h2>
                 <form class="d-flex flex-column"action="submit.php" method="post">
@@ -71,63 +101,63 @@
     </section>
     <!--GrowWithUs-->
     <section class="my-5 py-5 d-flex justify-content-center bg-purple">
-        <div class="mw1200 row d-flex container my-5 p-0">
-            <div class="col p-0 pe-5 container d-flex justify-content-center align-items-center">
-                <img src="img/contact_openpos.png" class="img-fluid rounded-4 quickshadow" alt="">
-            </div>
-            <div class="col-6 p-0 ps-5 d-flex flex-column justify-content-center">
+        <div class="mw1200 d-flex container p-0 justify-content-between mx-5 row row-cols-1 row-cols-md-2">
+            <div class="col-md-6 py-md-5 ps-md-5 p-0 py-5 d-flex flex-column justify-content-center order-md-2">
                 <h1 class="text-white">Grow with us!</h1>
                 <p class="text-white">See our open positions if you are interested in joining Karzhyn Media's international team.</p>
                 <div><a href="career.html#career_availablepos"><button class="rounded-5 button_so_i"><p class="px-3 py-2 m-0">Available Positions</p></button></a></div>
             </div>
+            <div class="col-md-6 py-md-5 pe-md-5 p-0 py-5 d-flex flex-column justify-content-center order-md-1">
+                <img src="img/contact_openpos.png" class="img-fluid rounded-4 quickshadow" alt="">
+            </div>
         </div>
     </section>
     <!--CompanyDetails-->
-    <section class="info py-5 d-flex flex-column justify-content-center">
-        <div class="mw1200 w-100 d-flex flex-column container p-0">
+    <section class="info py-5 d-flex flex-column justify-content-center align-items-center">
+        <div class="mw1200 w-100 d-flex flex-column p-0">
             <h1 class="text-center mb-5 text-purple">Company Details</h1>
-            <div class="d-flex flex-row my-5">
-                <div class="col-3 container d-flex flex-column justify-content-center p-0">
+            <div class="d-flex m-5 row row-cols-1 row-cols-md-2">
+                <div class="col-md-3 container d-flex flex-column justify-content-center p-0">
                     <a href="" class="contact-link1">info@karzhynmedia.com</a><br>
                     <p>Karzhyn Media</p>
                     <p>123 Orchard Road<br>Singapore 238879</p>
                     <p>Commercial Register Number:<br>SG-123.456.789</p>
                 </div>
-                <div class="col-9 container d-flex align-items-center p-0 ps-5">
+                <div class="col-md-9 container d-flex align-items-center p-0 ps-md-5">
                     <img src="img/contact_companydetails.PNG" class="img-fluid rounded-4 quickshadow" alt="">
                 </div>
             </div>
             <h1 id="contact_office" class="text-center my-5 text-purple">Office locations</h1>
-            <div class="d-flex flex-row my-5">
-                <div class="col-3 container d-flex flex-column justify-content-between p-0">
+            <div class="d-flex m-5 row row-cols-1 row-cols-md-2">
+                <div class="col-md-3 container d-flex flex-column justify-content-between p-0">
                     <h3 class="text-purple">Singapore</h3>
                     <p>123 Orchard Road<br>Singapore 238879</p>
                     <p>sg@karzhynmedia.com<br>+65 2665 7821</p>
                     <img src="img/contact_map1.PNG" class="img-fluid rounded-4 quickshadow" alt="">
                 </div>
-                <div class="col-9 container d-flex align-items-center p-0 ps-5">
+                <div class="col-md-9 container d-flex align-items-center py-4 px-0 ps-md-5 py-md-0">
                     <img src="img/contact_office1.PNG" class="img-fluid rounded-4 quickshadow" alt="">
                 </div>
             </div>
-            <div class="d-flex flex-row my-5">
-                <div class="col-3 container d-flex flex-column justify-content-between p-0">
+            <div class="d-flex m-5 row row-cols-1 row-cols-md-2">
+                <div class="col-md-3 container d-flex flex-column justify-content-between p-0">
                     <h3 class="text-purple">Philippines</h3>
                     <p>A. Mabini St.<br>Manila</p>
                     <p>ph@karzhynmedia.com<br>+63 2 985 7074</p>
                     <img src="img/contact_map2.PNG" class="img-fluid rounded-4 quickshadow" alt="">
                 </div>
-                <div class="col-9 container d-flex align-items-center p-0 ps-5">
+                <div class="col-md-9 container d-flex align-items-center py-4 px-0 ps-md-5 py-md-0">
                     <img src="img/contact_office2.PNG" class="img-fluid rounded-4 quickshadow" alt="">
                 </div>
             </div>
-            <div class="d-flex flex-row my-5">
-                <div class="col-3 container d-flex flex-column justify-content-between p-0">
+            <div class="d-flex m-5 row row-cols-1 row-cols-md-2">
+                <div class="col-md-3 container d-flex flex-column justify-content-between p-0">
                     <h3 class="text-purple">Vietnam</h3>
                     <p>88 Tran Hung Dao Street<br>Hanoi</p>
                     <p>vn@karzhynmedia.com<br>+84 24 1674 5374</p>
                     <img src="img/contact_map3.PNG" class="img-fluid rounded-4 quickshadow" alt="">
                 </div>
-                <div class="col-9 container d-flex align-items-center p-0 ps-5">
+                <div class="col-md-9 container d-flex align-items-center py-4 px-0 ps-md-5 py-md-0">
                     <img src="img/contact_office3.PNG" class="img-fluid rounded-4 quickshadow" alt="">
                 </div>
             </div>
@@ -181,6 +211,7 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
