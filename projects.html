@@ -38,7 +38,7 @@
     </header>
     <!--NavSmall-->
     <section class="d-flex flex-row justify-content-center align-items-center sticky-lg-top d-lg-none navsmall">
-        <div class="container d-flex flex-row justify-content-between align-items-center mw1200 px-4">
+        <div class="container d-flex flex-row justify-content-between align-items-center mw1200 px-3">
             <div class="d-flex ">
                 <a href="main.html" class="container p-0">
                     <img class="karzhynlogo"src="img/karzhynlogo.png" alt="karzhynlogo">
@@ -71,9 +71,9 @@
     </section>
     <!--projectsHero-->
     <section class="my-5 d-flex justify-content-center">
-        <div class="mw1200 d-flex container p-0 justify-content-between mx-5 row row-cols-1 row-cols-md-2">
+        <div class="mw1200 d-flex container p-0 justify-content-between m-2 m-md-5 row row-cols-1 row-cols-md-2">
             <div class="col-md-6 ps-0 pe-0 py-5 pe-md-5 d-flex flex-column justify-content-center">
-                <h1 class="hero-h1 pb-4 m-0">Showcasing the impact of our global projects</h1>
+                <h1 class="hero-h1 pb-4 m-0">Showcasing the impact of our Global projects</h1>
                 <p class="text-purpled">We assist medium to large-scale businesses, catering to both B2B and B2C sectors, in enhancing their customer acquisition process by leveraging a blend of branding design, animation, and packaging strategies.</p>
                 <div><a href="contact.html"><button class="rounded-5 button_so"><p class="px-3 py-2 m-0">Contact Us</p></button></a></div>
             </div>
@@ -141,23 +141,23 @@
             <div class="text-center">
                 <h1 class="text-purple">Our Work FAQ</h1>
             </div>
-            <div class="d-flex w-75 p-5 m-0 flex-column quickshadow rounded-4 n-extend1">
+            <div class="d-flex w-75 p-2 p-md-5 m-0 flex-column quickshadow rounded-4 n-extend1">
                 <div>
                     <h3 class="m-0 text-purple">What online marketing activities can Karzhyn assist with?</h3>
                     <p class="m-0 pt-5">Our digital marketing services include Search Engine Optimization, PPC advertising, social media advertising, content marketing, display advertising, programmatic advertising and digital PR. Using advanced analytical technologies, we ensure the accuracy of reporting and interpreting data. Learn more about our services.</p>
                 </div>
             </div>
-            <div class="d-flex w-75 p-5 m-0 flex-column quickshadow rounded-4 n-extend2">
+            <div class="d-flex w-75 p-3 p-md-5 m-0 flex-column quickshadow rounded-4 n-extend2">
                 <div>
                     <h3 class="m-0 text-purple">What industries does Karzhyn specialise in?</h3>
                     <p class="m-0 pt-5">We service both B2C and B2B clients, mid- to enterprise-level companies, helping to embrace digital marketing transformation.</p>
                 </div>
             </div>
-            <div class="d-flex w-75 p-5 m-0 flex-column quickshadow rounded-4 n-extend3">
+            <div class="d-flex w-75 p-3 p-md-5 m-0 flex-column quickshadow rounded-4 n-extend3">
                 <h3 class="m-0 text-purple">In which platforms does Karzhyn hold expertise?</h3>
                 <p class="m-0 pt-5">Our team is experienced in various local paid media platforms including Google Ads, Microsoft Ads, Naver, Baidu, Yahoo Japan, Yandex, Meta, Instagram, LinkedIn, Twitter, Pinterest, WeChat, TikTok and more. </p>
             </div>
-            <div class="d-flex w-75 p-5 mb-5 flex-column quickshadow rounded-4 n-extend4">
+            <div class="d-flex w-75 p-3 p-md-5 mb-5 flex-column quickshadow rounded-4 n-extend4">
                 <h3 class="m-0 text-purple">Where are Karzhyn's offices located?</h3>
                 <p class="m-0 pt-5">Karzhyn Media operates globally and currently has offices in Singapore, Philippines and Vietnam. You can also find our business representatives in Hong Kong, the United Kingdom and the United States.</p>
             </div>
@@ -166,9 +166,9 @@
     <!--GetInTouch-->
     <section class="d-flex align-items-center justify-content-center gitbg ">
         <div class="mw1200 my-5 mx-2 py-5 d-flex justify-content-center align-items-center form-container h-100 w-100">
-            <div class="getintouch-form p-5 justify-content-center w-100">
+            <div class="getintouch-form p-4 p-md-5 justify-content-center w-100">
                 <h2 class="my-4"><span><i class="bi bi-chat-left-fill pe-1"></i></span> Get in touch with Karzhyn Media today!</h2>
-                <form class="d-flex flex-column"action="submit.php" method="post">
+                <form id="myForm" class="d-flex flex-column"action="send_email.php" method="post">
                     <label class="mt-4" for="name">Name</label>
                     <input class="p-2" type="text" id="name" name="name" required>
                 
@@ -233,6 +233,7 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>

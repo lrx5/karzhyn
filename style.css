@@ -79,7 +79,6 @@ html{
 header{
     background-color: white;
     height: 111px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .karzhynlogo{
     height: 64px;
@@ -276,6 +275,7 @@ header{
     background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
     height: 100%;
     width: 8%;
+    overflow: hidden;
     content: '';
 }
 .gradient-right{
@@ -285,6 +285,7 @@ header{
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
     height: 100%;
     width:8%;
+    overflow: hidden;
     content: '';
 }
 .gray-text{
@@ -646,6 +647,9 @@ section p{
     }
 }
 @media (max-width: 999px) {
+    .hero-h1{
+        font-size: 48px;
+    }
     .main-header p{
         font-size: 39px;
         font-family: Jost, sans-serif;
@@ -686,6 +690,9 @@ section p{
     }
 }
 @media (max-width: 799px) {
+    .hero-h1{
+        font-size: 42px;
+    }
     .main-header p{
         font-size: 28px;
         font-family: Jost, sans-serif;
@@ -705,7 +712,7 @@ section p{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 1200px;
+        width: 100%;
         height: 100%;
     }
     .carousel{
@@ -732,15 +739,15 @@ section p{
 }
 @media (max-width: 399px) {
     .hero-h1{
-        font-size: 40px;
+        font-size: 32px;
     }
     .main-header p{
-        font-size: 2rem;
+        font-size: 20px;
         font-family: Jost, sans-serif;
         font-weight: 500;
     }
     .main-header .span1, .main-header .span1, .main-header .span3, .main-header .span4{
-        font-size: 2rem;
+        font-size: 20px;
         font-family: Jost, sans-serif;
         font-weight: 600;
     }
@@ -753,7 +760,7 @@ section p{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 1200px;
+        width: 100%;
         height: 100%;
     }
     .carousel{
