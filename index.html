@@ -11,14 +11,14 @@
 </head>
 <body class="d-flex flex-column">
     <!--NavLarge-->
-    <header class="d-flex flex-row justify-content-center align-items-center sticky-lg-top d-none d-lg-block">
-        <div class="container d-flex flex-row justify-content-center align-items-center mw1200 p-0">
-            <div class="container p-0">
-                <a href="main.html" class="container p-0">
+    <section class="p-0 sticky-lg-top d-none d-lg-inline-block bg-white px-5">
+        <div class="d-flex justify-content-between align-items-center mw1200 mx-auto">
+            <div class="">
+                <a href="main.html" class="p-0">
                     <img class="karzhynlogo"src="img/karzhynlogo.png" alt="karzhynlogo">
                 </a>
             </div>
-            <div class="d-flex flex-row justify-content-center align-items-center">
+            <div class="d-flex flex-row">
                 <div class="nav1 d-flex align-items-center">
                     <a href="index.html" class="p-4 nav-links text-decoration-none">ABOUT</a>
                 </div>
@@ -35,11 +35,11 @@
                 </div>
             </div>
         </div>
-    </header>
+    </section>
     <!--NavSmall-->
     <section class="d-flex flex-row justify-content-center align-items-center sticky-lg-top d-lg-none navsmall">
         <div class="container d-flex flex-row justify-content-between align-items-center mw1200 px-3">
-            <div class="d-flex ">
+            <div class="d-flex pt-3">
                 <a href="main.html" class="container p-0">
                     <img class="karzhynlogo"src="img/karzhynlogo.png" alt="karzhynlogo">
                 </a>
@@ -70,15 +70,15 @@
         </div>
     </section>
     <!--HomeHero-->
-    <section class="mx-4 my-5 mx-md-5 d-flex flex-column align-items-center">
+    <section class="mx-4 my-md-5 mx-md-5 d-flex flex-column align-items-center">
         <div class="mw1200 d-flex p-0 row row-cols-1 row-cols-md-2 justify-content-between">
             <div class="col py-5 pe-md-5 d-flex flex-column justify-content-center p-0">
-                <h1 class="hero-h1 pb-4 m-0">Showcasing the impact of our global projects</h1>
-                <p class="text-purpled">We assist medium to large-scale businesses, catering to both B2B and B2C sectors, in enhancing their customer acquisition process by leveraging a blend of branding design, animation, and packaging strategies.</p>
-                <div><a href="contact.html"><button class="rounded-5 button_so"><p class="px-3 py-2 m-0">Contact Us</p></button></a></div>
+                <h1 class="hero-h1 pb-4 m-0">Crafting Brands with Creative Strategy</h1>
+                <p class="text-purpled hero-p">We help businesses create a strong and memorable brand presence that stands out in the competitive marketplace.</p>
             </div>
-            <div class="col py-md-5 ps-0 ps-md-5 pe-0 container d-flex justify-content-center align-items-center">
-                <img src="img/projects_hero.PNG" class="img-fluid rounded-4 quickshadow" alt="">
+            <div class="col py-md-5 ps-0 ps-md-5 pe-0 container d-flex justify-content-center align-items-center position-relative">
+                <img src="img/decal_purple_mini.png" class="decal1 img-fluid position-absolute d-none d-md-block" alt="">
+                <img src="img/heroimg2.png" class="img-fluid rounded-4 quickshadow bg-light" alt="">
             </div>
         </div>
         <div class="mw1200 mt-5 d-flex row row-cols-1 row-cols-md-2 row-cols-lg-4 align-content-center justify-content-center p-0">
@@ -96,12 +96,12 @@
             </div>
             <div class="col p-0 pe-md-0 pe-lg-0 ps-md-2 text-center text-md-start">
                 <h2 class="herosub-h2">Marketing Goods</h2>
-                <p class="herosub-p">From brochures to eye-catching flyers, we transform ideas into tangible assets that resonate to the hearts of your target audience.</p>
+                <p id="index_oc" class="herosub-p">From brochures to eye-catching flyers, we transform ideas into tangible assets that resonate to the hearts of your target audience.</p>
             </div>
         </div>
     </section>
     <!--OurClients-->
-    <section class="my-5 d-flex justify-content-center bg-purple">
+    <section id="index_oc" class="my-5 d-flex justify-content-center bg-purple">
         <div class="col trusted d-flex flex-column justify-content-around align-items-center px-0 pt-0 mw1200 container gap-5">
             <div class="container">
                 <p class="row trusted-p mt-4 justify-content-center">Our Clients</p>
@@ -127,7 +127,7 @@
     <div class="row empty-space w-100"></div>
     <!--Testimonials-->
     <section id="index_testimonials" class="my-5 position-relative">
-        <img class="decal1a" src="img/decal_purple_mini.png" alt="decal_purple_mini">
+        <!--<img class="decal1a" src="img/decal_purple_mini.png" alt="decal_purple_mini">-->
         <div class="justify-content-center">
             <h1 class="text-center text-purple">What our clients says about us</h1>
         <div class="testimonials-container d-flex justify-content-center">
@@ -178,7 +178,7 @@
     <!--Spacing-->
     <div class="row empty-space w-100"></div>
     <!--WhatMakesKarzhynDifferent?-->
-    <section id="career_ourvalues" class="my-5 d-flex justify-content-center">
+    <section id="index_wmkd" class="my-5 d-flex justify-content-center">
         <div class="mw1200 d-flex flex-column container p-0 justify-content-center">
             <div class="text-center mb-5"><h1 class="pb-5 text-purple">What Makes Karzhyn Different?</h1></div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 pb-5 mx-2 mx-md-5">
@@ -315,8 +315,8 @@
         <div class="container mw1200 p-5">
             <div class="row row-cols-1 row-cols-md-5">
                 <div class="col d-flex justify-content-md-center">
-                    <div class="col-auto d-flex flex-column footer-a mb-3 mb-md-0">
-                        <a href=""><p>info@karzhynmedia.com</p></a>
+                    <div class="col-auto d-flex flex-column mb-3 mb-md-0 footer-links1">
+                        <a class="m-0" href=""><p class="footer-b mb-10">info@karzhynmedia.com</p></a>
                         <a href="">SG +65 2665 7821</a>
                         <a href="">PH +63 2 985 7074</a>
                         <a href="">VN +84 24 1674 5374</a>
@@ -325,7 +325,8 @@
                 <div class="col d-flex justify-content-md-center footer-a mb-3 mb-md-0">
                     <div class="col-auto d-flex flex-column footer-a">
                         <p>About us</p>
-                        <a href="index.html">What We Do</a>
+                        <a href="index.html#index_oc">Our Clients</a>
+                        <a href="index.html#index_wmkd">Karzhyn Principles</a>
                         <a href="index.html#index_testimonials">Testimonials</a>
                     </div>
                 </div>
@@ -341,7 +342,6 @@
                 <div class="col d-flex justify-content-md-center footer-a mb-3 mb-md-0">
                     <div class="col-auto d-flex flex-column footer-a">
                         <p>Projects</p>
-                        <a href="">Clients</a>
                         <a href="projects.html#projects_cs">Case Studies</a>
                         <a href="">Achievements</a>
                     </div>

@@ -15,13 +15,14 @@
 *{
     box-sizing: border-box;
 }
+p{
+    font-weight: 400;
+}
 html, body{
     margin: 0;
     padding: 0;
     height: 100%;
-}
-html{
-    overflow-x: hidden;
+    width: 100%;
 }
 /*Mobile Nav*/
 .hamburgerstyle{
@@ -373,13 +374,20 @@ textarea, input{
     background-color: var(--white);
     height: auto;
 }
-.footer-a p{
+.footer-a > p{
     color: black;
     font-family: Lato, sans-serif;
     font-weight: 900;
     font-size: 16px;
+    margin-bottom: 10px;
 }
-.footer-a a{
+.footer-b{
+    color: var(--purple);
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+}
+.footer-a > a{
     color: black;
     font-family: Lato, sans-serif;
     font-weight: 400;
@@ -503,8 +511,8 @@ section p{
     position: absolute; 
     transform: rotate(90deg);
     z-index: -10;
-    right: -100px;
-    top: 134px;
+    right: -150px;
+    top: 85px;
     /*animation: decal1anim 8s ease-in-out infinite;*/
 }
 .decal1a{
@@ -784,4 +792,21 @@ section p{
         overflow: hidden;
         height: 400px;
     }
+}
+
+.fade-in {
+    transform: translateY(200px);
+    opacity: 0;
+}
+.fade-in.is-visible {
+    transform: translateY(0px);
+    opacity: 1;
+}
+.footer-links1 > a{
+    color: var(--purple);
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.mb-10{
+    margin-bottom: 10px;
 }
